@@ -1,0 +1,1421 @@
+﻿Item #,Date Entered,Item,Short Description,Impact (WHO is saving time?),Impact (WHAT can we do with that capacity?),Owner,Reporter (your name),Hours Saved Per Year,How are you measuring it?,Dependencies (Anything that would have to happen for this savings to be realized),Blockers (Anything that might stall or block realizing these savings),Accelerators (anything we can do to increase the savings?),"How did you compute your Hours Saved per Year? (like : 2h/wk saved rolls up to 100h/yr, etc)",Other Notes,Team (Optional),Sub-team (Optional),,44676.5
+000001,01/25/25,DMS Testing Automation,Reduction of time for manual testing each release using Playwright,Engineering team,More time to code!,Zack Sayenko,Buck Avey,162,Comparison of time pre and post,Already done,no,continue to automate testing,"Production:
+45 minutes x 5 people = 225 minutes per release
+225 minutes x 24 biweekly releases = 5400 minutes annually
+Lower env testing/ CFQA:
+45 minutes x 2 people (1 dev/ 1 pm min.) = 90 minutes per release
+90 minutes x 24 biweekly releases = 2160 minutes annually
+With 5 People (4 Devs/1 PM) Testing in Production:
+Sum of 5400 + 2160 = 7560 minutes per year
+7560 = 126 hours saved annually
+[126 hours ÷ 40 hour/week = 3.15 work weeks]
+With 7 People (6 Devs/1 PM) Testing in Production:
+Sum of 7560 + 2160 = 9720 minutes per year
+9720 = 162 hours saved annually
+[162 hours ÷ 40 hour/week = 4.05 work weeks]",,,,,
+000002,02/06/25,SAI self Deployment,Enabled SAI team to self deploy application,Fast Enablement Team,Concertrate on other enablement task for FAST engineering,Dilip Samanta,Dilip Samanta,192,Time spent by FASTteam for SAI,Already done,no,,30mins average /day x 30 days x 12 months = 180 hours,,Platform Engineering,PE FAST Enablement,,
+000003,02/06/25,FAST self Deployment,Enabled 5 FAST team to self deploy,Fast Enablement Team,Concertrate on other enablement task for FAST engineering,Dilip Samanta,Dilip Samanta,960,Time spent by FASTteam to deploy for various teams,Already done,no,,30mins average /day x 5 teams x 30 days x 12 months = 900 hours,,Platform Engineering,PE FAST Enablement,,
+000004,02/06/25,Transport Service Automation in FAST,Enabled 5 FAST team to self deploy,DMS Engineering team,More time to code and test latest code in FINT07,Dilip Samanta,Dilip Samanta,240,We conducted a small feedback session with DMS team. Understood their pain point of restarting Transport service through pipeline after a ticket is raised. We included this step during FAST deployment restart of the Transport service for the WFE server role,,,,20hrs of time spent to restart per month x 12 months = 240hrs,,Platform Engineering,PE FAST Enablement,,
+000005,02/07/25,CMDB Data Import Set Functionality,Reduced time for creating applications in the CMDB by using new Dataset Import functionality,Endpoint Engineering team,More time to code!,Bob Moosavi,Bob Moosavi,104,Saved 1 hour for each of 49 new Endpoint application items created in the CMDB using spreadsheet Dataset instead of manually submitting through request form.,Already done,no,,2hrs average/week x 12 months = 104 hrs,,,,,
+000006,02/12/25,FAST self Deployment,Enabled ClariftyFirst team to self deploy in FAST Eval02 environment,Fast Enablement Team,Concertrate on other enablement task for FAST engineering,Dilip Samanta,Dilip Samanta,120,Time spent by Fast team to deploy for ClarityFirst deployment,Already done,no,,2hrs average/week x 12 months = 104 hrs,,Platform Engineering,PE FAST Enablement,,
+000007,02/13/25,"Direct app reboot automation (MSF, MRS, XMPIE, Project 85, SalesForce)","MSF, MRS & XMPIE apps have weekly & monthly reboot planned, which is being done manually now. Team has automated & scheduled this in GitHub",Platform Reliability Engineering Team,Team is now working on other initiatives/projects.,Shalini B,D Akash Mohan,132,Time spent by Reliability Engineering team to do the server reboots manually,No,No,No,11hrs/month x 12 months = 132 hrs,,Platform Engineering,PE Reliability Engineering,,
+000008,02/19/25,Agentnet Sanity Optimization,"achieving 100% automation of the sanity tests for Agentnet and executing them daily without manual intervention. has reduced the sanity running time from 45 minutes to 15 minutes, saving approximately 30 minutes per run across Dev, Stage, and Prod environments. This results in an annual saving of 250 hours.",We are planning to use the QA for increasing the Regression automation coverage,We are planning to use the QA for increasing the Regression automation coverage,Uday Kamath/Anju Johnson,Uday Kurmana,252,"Time taken to execute the sanity                                                    Details                                      Unit  Saving
+ Each Environment Saving       0.5 Hrs
+ Total Environments                  2 (Stage,Prod)
+ Per Day 1 Cycle                      1 Hrs/Day
+
+Considering 21 Days in a month (excluding Holidays and weekends) 21 Hrs/Month
+Total Saving Per Year 12  (Months) * 21 Hrs/Month) = 252 Hours/Per Year      ",Already done,no,,"Time taken to execute the sanity                                                    Details                                      Unit  Saving
+ Each Environment Saving       0.5 Hrs
+ Total Environments                  2 (Stage,Prod)
+ Per Day 1 Cycle                      1 Hrs/Day
+
+Considering 21 Days in a month (excluding Holidays and weekends) 21 Hrs/Month
+Total Saving Per Year 12  (Months) * 21 Hrs/Month) = 252 Hours/Per Year      ",,,,,
+000009,02/20/25,FAST self Deployment,Enabled Eclipse to deployment,Fast Enablement Team,Concertrate on other enablement task for Eclipse engineering,Dilip Samanta,Dilip Samanta,160,Time spent by FASTteam to deploy for Eclipse teams,Already done,no,,,,Platform Engineering,PE FAST Enablement,,
+000010,02/24/25,"Agency Lender Enablement projects (SCI, LTX, EWB)",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Arun Shetty,Abhishek Maitrey,176,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,,"SCI - 18 hours for deployment of eRFCs per year
+SCI - 5.16 hrs month x 12 months = 62 hrs
+EWB - 4hrs month x 12 months = 48 hrs
+LTX - 4hrs month x 12 months = 48 hrs
+Total hrs savings = 176 hrs",,Platform Engineering,PE Agency Lender Enablement,,
+000011,02/24/25,Okta - Inactive User deletion -Runbook,"Using Python script, automated on deleting Inactive users from Okta console",Docutech,,Pankaj Pandey,Shubhand Vasudevan,96,Manually doing this process would take 15 minutes per user.,Already done,no,,Around 6000 users deleted this month. This step we never performed before.,,Platform Engineering,PE DocuTech Enablement,,
+000012,02/24/25,Created Octopus Runbook (powershell script) for cleanup of old octopus packages,"In Octopus deployment server, automated for cleaning of old unused packages.",Docutech,,Pankaj Pandey,Shubhand Vasudevan,12,Manually removing this would be taking more than an hour per month.,Already done,no,,Cleanned up around 400 GB of drive space in production Octopus application Server.,,Platform Engineering,PE DocuTech Enablement,,
+000013,02/24/25,Created snapshots cleanup script,It will help application teams to clenaup the snapshots that are no longer needed,DNA,,Prem Kumar Alla,Shubhand Vasudevan,25,Manually removing this would be taking more than 4 hours per month.,Already done,no,,Unused/no longer needed 500 snapshots are deleted using this script as of now,,Platform Engineering,PE DNA Engineering Enablement,,
+000014,02/24/25,Created to delete unused disks using script,It will help to delete unused disks on resource groups level,DNA,,Prem Kumar Alla,Shubhand Vasudevan,30,Manually removing this would be taking more than five hours per month.,Already done,no,,Around 200 unused disks are cleaned up in Prod & Non-Prod environments in Azure cloud,,Platform Engineering,PE DNA Engineering Enablement,,
+000015,02/24/25,Automate Start\Stop EC2 Instances (LVIS),We used to manually start and stop LVIS DR servers during the monthly patching window. We have automated this to run via GitHub workflow and we will not receive any tickets from LVIS Team for this.,Cloud Support POD,We can reduce the people count working during weekends and engage them taking care of additional tasks during the week days.,Chandrashekar G,Amulya Rout,24,We do not have to manually do this from the AWS console and also LVIS team will be able to perform this themselves without our help.,Already Done and we tested the workflow on 23rd Feb during patching day. Will schedule a call with LVIS team for handover.,no,,2hrs/month x 12 months = 24 hrs,,Platform Engineering,PE Cloud Engineering,,
+000016,02/24/25,Automate Server Validation (LVIS),We used to manually validate around 50 servers per month for LVIS team after the patching is done. We have created a powershell script for validation and we do not have to do it manually again.,Cloud Support POD,We can reduce the people count working during weekends and engage them taking care of additional tasks during the week days.,"Chandrashekar G,
+Anandakumara",Amulya Rout,48,We do not have to validate the servers by RDP to each of them manually.,The powershell script already completed and we have tested during Feb patching days. Now working on creating a GitHub runbook and workflow.,no,,5mins/server x 48 x 12 = 2880 mins = 48 hrs,,Platform Engineering,PE Cloud Engineering,,
+000017,02/24/25,FirstFunding Performance Tuning,"Optimized Stored Procedures, archived stale table date, performance tested the improvments, tested to ensure no loss of functionality, confirmed results with users and system performance monitoring (FusionReactor)",FirstFunding Wire Review Operations team,Shortens throughput time which is a customer service performance measurment.,David Gaddy,Anthony Beck,305,"Page load performance on Wire Review screen, From Home Screen, after Finish Audit, and on the Wire Review Docket",Work is completed.,no,Continued Performance tuning could increase the toil savings,"33 seconds x 128 page loads per day x 260 days per year = 1,099,956 seconds => 305.5 hours per year",,,,,
+000018,02/27/25,Escalating Major & Preemptive Incidents thru Slack,Provide alternate means of escalating major and preemptive incidents to EOC/SRM aside from calling the EOC hotline #. Create Slack handles for EOC & SRM and develop workflow in Slack to automatically contact EOC (via preferred method of MS Teams & email) when requesting a priority bridge.,Provides an efficient means of reporting production incidents on the preferred Slack collaboration tool and shortens the time to escalate and fully engage a bridge for priority events.,Provides an efficient means of reporting production incidents on the preferred Slack collaboration tool and shortens the time to escalate and fully engage a bridge for priority events.,Service Recovery Mgmt,Ken Willkom,112,Ran report in ServiceFirst of how many bridges escalated to EOC/SRM in the last 12 months to get projected annual hours saved,,None,,"673 events escalated to EOC/SRM in the last year, saving approx. 10 min./event",,,,,
+000019,02/27/25,Automated post bridge surveys,Eliminates manual tasks involved with sending post bridge surveys and processing results,SRM team members,Saves time of the SRM team members in sending the survey and less dependance on MS Forms application. This also provides centralised database to store the feedback results improving the availability of the data. ,Service Recovery Mgmt,Ken Willkom,12,"Number of surveys sent (24) for Jan and Feb and extrapolated the same for this year, and calculated savings of 5 mins/incident.",,None,,144 surveys/year and saving 5 min./survey event,,,,,
+000020,02/28/25,MEC 3.1,Redundant and Obsolete fields in the previous MEC 3.0 were removed and Comm content streamlined,Recovery Manager bandwidth,Frees up Recovery Manager bandwidth required to maintain MEC and allows Recovery Manager to focus on driving service restoration on the bridge call and maintaining accurate and up to date content in the bridge meeting notes.​,Service Recovery Mgmt,Ken Willkom,24,Number of incidents (144) extrapolated from the total incident count of Jan and Feb,,None,,144 incidents/ year and saving 10 min./incident comm,,,,,
+000021,03/04/25,Approved and created 17 Standard Changes YTD,Standard model changes are a preapproved low risk change activity that do not need to go to CAB and can execute on the fly,"I estimate that 1 hour of Change Owner time is saved per record creation (taking into consirderation neither CAB, approval workflows, or manual record creation is needed)","I estimate that 1 hour of Change Owner time is saved per record creation (taking into conserderation neither CAB, approval workflows, or manual record creation is needed)",ITSM - Change Management,Keri Wilson,59,I run a report on how many times an assigned standard change is used from the templates created YTD,,,,59 hours year to date (will update as needed) - how many times each of the 17 new standard templates have been used combined.  One hour per standard change,,Technology Services,,,
+000022,03/05/25,Reduced time needed for product and market data analysis,"Data base cleaning, normalization, reconfiguring tables and data sources, and validating data sources and parameters, combining data from MRS, Salesforce, and product servers","Researchers can pull more accurate and cleaner data, reducing time in creating queries, reducing error-risk, and hastening analytical tasks results in faster reporting cycles, more consistency and reliability, and focus on the insights and venture into new exploratory data analysis. Sheer  volume of data slowed down analysis in Excel, often causing crashes and file corruption, thereby forced restarts and do-overs from scratch. ","Researchers can pull more accurate and cleaner data, reducing time in creating queries, reducing error-risk, and hastening analytical tasks results in faster reporting cycles, more consistency and reliability, and focus on the insights and venture into new exploratory data analysis. Sheer  volume of data slowed down analysis in Excel, often causing crashes and file corruption, thereby forced restarts and do-overs from scratch. ",Aaron Nepple/A Nanand Kumar,Kate Janson,400,Pace of original analysis and report creation to current turnarounds using ADO stories tracking,"Although the data team continues to improve data and reporting for us, the largest gap has been closed.","Our team's needs aren't the highest priority to business at this time, but the higher priorities like USP will feed into our work eventually and create more time savings",Keep up the data management efforts!,"120 hours/quarter is now about 20/quarter, I can't adequately express my gratitude to the data team for truly reducing painful toil and freeing my time to focus on the analytics not the data",,,,,
+000023,03/10/25,AgentNet Production - UW Split Update Automator for TE,"Updating the Agent/UW split or endorsements in the TitleExpress rate tables requires lots of manual entry. 45 x 3 fields x 8 rate tables, at a minimum, all with the same value.  - We already had a tool to help with editing these rate tables. We updated it to allow entering the value once and apply to all endorsements, per rate table, reducing the amount of time from minutes to seconds.",AgentNet Product and Engineering Teams,Expediates the processing of users orders to elimates backlogs. No need to pull resources from other areas to help fulfill orders.,Heidi Roman ,Heidi Roman,75,Number of rate tables typically updated x amount of time saved per rate table. Old v New time process,no,no,no,45 lines x 10 seconds per line  x 8 rate tables = 3600 seconds or  vs. 45 lines @ 10 seconds x 8 rate tables = 80 seconds (75 sets on average),,,,,
+000024,03/10/25,AgentNet Production - Creating (non-FA) UW/State rates required repetitive seed data entry for similar calculations.,"Rate Development Accelerator was created to read an excel sheet filled in by non-technical SMEs and then code generate the seed data, streamlining the capture of industry knowledge and rate manuals into code. Excel to JSON.",AgentNet Product and Engineering Teams,"Increased the number of rates that are able to be completed per Sprint in order to complete the project sooner. Instead of 1UW/State per Sprint able to complete a minimum of 3 UW/State per Sprint. By completing the project sooner, team memebers can move on to othr projects.",Heidi Roman/Shakina Ebenezer,Heidi Roman,2205,Old v New time process review ,no,no,no,,,,,,
+000025,03/10/25,"AgentNet Production - Rates are created through multiple stories and should not be released until all stories are completed for accuracy. We could control the release in code through a config but that requires a pull request, reviews, a pipeline deployment and an RFC to Prod. ","Rate Release Feature Flag is JSON feature flag created in Launch Darkly to control the release of rates dynamically per environment with immediate release capabilities, reducing barriers to quick releases of previously validated functionality in lower environments.",ANP Product and Engineering Teams,Utilizing the extra time to keep up with the development of rates so a bottleneck is not created. ,Heidi Roman,Heidi Roman,156,Number of rates completed x amount of time it takes to deploy.,no,no,no,,,,,,
+000026,03/10/25,"AgentNet Services MULTI - Key initiatives focused as part of Back to basics program - Branching Strategy, environment stabilization, automation of release steps, QA automation, Automation of manual recursive tasks.","Environmental Stabilization
+
+Completed Items
+Build Stage & Prod Support environments
+Prior – completed 70% 
+Training – completed 55% ETA 
+Work as user enabled in Prod support
+TPOC for template syncing between prod and non prod environments.
+
+Outcome
+Reduce the Waiting time for candidate builds from 5 days to Zero
+
+2. Automate Release Process
+Completed Items
+11 steps automated and consolidated into single pipelines
+AN4.0 Application pipelines consolidated into single pipeline trigger
+QA sanity testing integrated
+
+Outcome
+Release time reduced from 120 mins to 55mins, saving approx. 65 mins per release
+
+Savings Toil in 2024 : 60 releases * 15 mins = 900 mins saving
+
+3. Manual  task automation
+Completed Items
+Automated service account password , client secret and SSL certificate updation .
+Working on automating the fetching workflow for password , SSL certificate and client secret from CyberArk team
+
+Outcome
+Reduce the manual effort of service account password , client secret and SSL certificate rotation every year.
+
+4. QA Automation
+Completed Items
+Sanity automation is 100% - newly created and integrated with pipelines
+UI Automation -  increased automation coverage to  79% percent
+API Automation we have coverage has increased to 80% which was 65% in Q3.
+
+
+
+",ANP Product and Engineering Teams,,Anju Johnson,Anju Johnson,500,,no,no,no,,,,,,
+000027,03/10/25,AgentNet Knowledge - Streamlined Underwriting Communication Flow,Updated the Underwriting Communications Delivery process and eliminated duplicate work required to curate multiple copies and flows by improving the user experience in ANK,CRAFT/Agency Content,Allowed for reassignment of resource another critical project and avoided increase in staffing. (Low Cost Provider),"Alexa El-Jamil, David McClelland",Richard Smith,936,SLA monitoring old v. new process,No,No,No,This is for the centralized process.(18 hrs per week saved by process improvement *52 weeks = 936 hours) The total savings to Agency by bringing this into a central team is exponentially higher. ,,,,,
+000028,03/12/25,Corporate Systems - Financials,Utilized Azure Pipeline to streamline the automation of Code deployment from the development phase to Production ,Engineering team,While eliminating manual errors related to Migration.  The time saved can be redirected towards other tasks such as focusing on development and database activities,Suresh Kumar,Suresh Kumar,400,"Before optimization, migrating a single ticket from development to production took 240 minutes. Over a span of 12 months, approximately 600 tickets were created, resulting in a total of 2400 hours spent on migration. After optimization, the migration time per ticket was reduced to 200 minutes, totaling about 2000 hours for the same number of tickets. This means the optimization saved 400 hours ",No,No,No,,,Technology Services,,,
+000029,03/12/25,Corporate Systems – Enterprise Performance Management ,"Automate the forecast data transfer from planning to reporting cube,Automated the process of generating and distributing the monthly FCT reports and Automate data load process into Agency reporting Cube ",Engineering team,Engineering team is saving time with this process and enhancing customer experience by providing faster reporting of data.,Hyperion EPM Team,Chethan Kumar,500,Manual data load vs Automated data load,No,No,No,"Forecast Push Automation - currently run twice a month during non forecast cycle,
+5-6 times a month during Forecast/Budget cycle. it take around 7 hours. after automation it reduces to less than an hour. 
+Monthly reports automation - automated report books distribution automation and saves 2 hours monthly. ",,Technology Services,,,
+000030,11/03/25,xMatters Slack/Teams Workflow,ST2 members can initiate xMatters workflow from Slack/Teams channels to engage resolver team quickly and create ServiceFirst incident via xMatters UI.,ST2 tech members,ST2 tech members need not to wait for another team's assistance in engaging a resolver team using xMatters integrated workflow. This will allow non-ITIL members of ServiceFirst the ability to open and resolve an incident managed thru xMatters UI. ,Service Recovery Mgmt,Harish Rajagopal,112,Report of incidents escalated to EOC last year is 673 and 10 mins saving when ST2 developers use the workflow to engage the resolver teams.,,None,,"673 events escalated to EOC/SRM in the last year, saving approx. 10 min./event",,,,,
+000031,17/03/25,ServiceFirst - Security Group Management Automation - Create Group and Add/Remove Members,"Expand upon existing automation to include support to automate the creation of on-prem AD groups, as well as adding/removing users, admin and service (-a) accounts to/from on-prem AD groups",Identity and Access Management Operations (IAM Ops) ,,ServiceFirst Development,Dominic Behnood,1350,"The IAM Ops group manager estimates that we save between 15-30 mins per request for the service. Based off the last 12 months of demand for the service, we can estimate the hours saved.",No,None,No,"We believe we can reduce average delivery time for the creation of new groups by 77% (from 110 hours to 25 hours per request), and reduce average delivery time for adding/removing members to/from groups by 30% (from 53 hours to 37 hours per request) by automating this.",,Technology Services,,,
+000032,17/03/25,ServiceFirst - Email Services Mail Relay User Automation,enabled automating the creation of mail relay users within Proofpoint through the Email Services catalog item,Email Services & app dev teams who need to request mail relays,"Email Services & app dev teams who need to request mail relays. Email will use this time to imporve the mail relay and other technology, and app dev teams will likely use it to improve their products.",ServiceFirst Development,Dominic Behnood,180,"Per the service owner, this will save their team time (60 mins per request) by eliminating the back and forth with requestors, and the time taken to manually fulfill the request. We are anticipating a very large number of these request to be fulfilled this year as we migrate mail relays. Based on April volume, I calculated the estimate (conservatively)",No,None,No,"Mins saved per request * Number of Requests (last month) * 12
+60*15*12=180 hours",,Technology Services,,,
+000033,03/17/25,"Agency Lender Enablement projects (FMS, NPP,FAMOS,Flexter)
+",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Arun Shetty,Abhishek Maitrey,52,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,,"Flexter- 18 hours per year, Automated IIS and Windows services management for Dev/UAT/Prod/DR
+
+FMS, NPP - 26 hours per year, Automated IIS Reset and Service Restart on all environments (Dev, UAT, Prod)
+
+FAMOS - 8 hours per year, Automated certificate creation and renewal (Dev, Stage, QA, Prod, and DR environments)
+FAMS - 8 hours per year, Developed generic module for certificate deletion and revocation for internal and external certificates.
+
+Total hrs savings = 52 per year",,Platform Engineering,PE Agency Lender Enablement,,
+000034,18/03/25,NPS Sanity Automation,"Reduction of time for manual testing. Team uses the sanity automation for each deployment in Non-prod/Prod deployments.
+EWB - Saving aprox 30 mins for each run which was around 1 hour.
+FASTSearch - Saving around 35 mins for each run which was around 45 mins.",Quality Efficiency. ,,"EWB - Swetha, Ram, Veda, Dharini
+FASTSearch - Asish, Anuradha, Rajini",Prasanna Rajanna,250,Comparison of time Pre and Post,Already Done,No,No,1 hour per day for daily execution in QA/UAT/PROD Environments by multiple team members for aprox 250 days.,,,,,
+000035,18/03/25,NPS Post-Patching Automation,"Resintalling the earlier version of java after post patching to support the BRMS version in EWB and FASTSearch
+Automating the server reboot process during post-patching.",Engineering Team; ,,"Anrus, Vijay, Imam, Asutosh, Syam","Prasanna Rajanna, Rajitha Padmini",96,Comparison of time Pre and Post,Already done,No,No,"4 hours patching activities for non-prod and prod servers in FASTSearch. Considering  2 times in a month, annual savings around 72 hours",,,,,
+000036,18/03/25,FASTSearch Web Scraping,Introduction of Azure OpenAI in web scarping process will significantly reduce the development efforts along with waiting period to the production,Engineering Team; Product Team,Increase scraping capabilities,"Vineet, Tarun, Tanusree",Prasanna Rajanna,1144,Comparison of time Pre and Post,In progress; POC completed,No,No,"AI Cost per month : $125
+Reduction in efforts - 44 hours per sprint.",,,,,
+000037,03/20/25,"Agency Lender Enablement projects (AgentNet, QCorrect)
+",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Arun Shetty,Abhishek Maitrey,128,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,,"1. AgentNet: Automated pre and post deployment steps for Prod. Saving 60 hours yearly.
+2. Qcorrect: Automation for Prod environment. Saving 8 hours yearly.
+     Qcorrect: Automation for 3 non-prod environments. Saving 60 hours yearly
+
+Total hrs savings = 128 per year",,Platform Engineering,PE Agency Lender Enablement,,
+000038,21/03/25,Automated testing for Loan actions CF SCI,Previously having to go to the UI to perform mutliple steps on multiple loans resulted in delays in UAT. With the addition of automated testing with Playwright our Senior QA analyst can now save ~ 30 minutes per week while defending against bugs by having automated thisregression test case.  ,CF SCI Quality Analysts and LBA,,David Chau,Anthony Beck,52,Comparison of time Pre and Post,Already realized,No,"CICD implementation will allow for faster detection of issues, and extended automated test coverage.","Consulted with LBA (Julie Clemmons) and Test Engineer (David Chau) to discover that at minimum 25 minutes per week are being saved, likely more. Manually testing took about 25 minutes, Visual studio now shows 6.5 minutes. Additonally multiple loans are needed for testing each week, costing the Julie at least 30 additonal minutes. 60 minutes per week is 52 hours per year. This does not acocunt for potential further time savings if/when the automated regression detects a possible future bug.   ",,,,,
+000039,25/03/25,Lender Look up Tool,The Lender Lookup Tool application is being retired with high confidence which helped us save cost and toil for maintanance,Engineering team,Saved toil for maintenance,Stephanie Brown,Ramaswamy Subramanyan,113,"Calculated engineering toil effort wrt to Running veracode scans,Fixing Pending VITS, Rotating Password /Client Secret/Certificate renewal,QA testing, GitHub Migration",No,No,No,"Running Veracode scans(Dynamic and Static) minimum 12 scans/year - 40 hr/yr
+Fixing Pending VITS- 40 hr
+Patching 12 times Prod and Non prod - 20 hr
+3 Certificate rotation - 3 hr
+2 service accounts -1 hr
+2 client secrets -2 hr
+QA testing - 4 hr
+GitHub Migration & fixing pipeline issues - 3hr",,Software Engineering,,,
+000040,25/03/25,AIM+ Watermark,This is a SAAS application and retired with high confidence and ingested into Direct vault as part of Technology Optimization,Engineering team,Saved toil for maintenance,Jason Tiffany,Ramaswamy Subramanyan,10, Saved Toil for fixing pending IPT's,No,No,No,Pending Secutiry issues(IPT's waivers)- 10 hr,,Software Engineering,,,
+000041,25/03/25,SureClose Watermark,This is a SAAS application and retired with high confidence and ingested into Direct vault as part of Technology Optimization,Engineering team,Saved toil for maintenance,Jason Tiffany,Ramaswamy Subramanyan,10, Saved Toil for fixing pending IPT's,No,No,No,Pending Secutiry issues(IPT's waivers)- 10 hr,,Software Engineering,,,
+000042,25/03/25,Colorado O & E Reports,This application is retired and users are redirected to IgniteRE marketing(Technology Optimization),Engineering team,Saved toil for maintenance,Stephanie Brown,Ramaswamy Subramanyan,127,"Calculated engineering toil effort wrt to Running veracode scans,Fixing Pending VITS,Rotating Password /Client Secret/Certificate renewal,QA testing, GitHub Migration",No,No,No,"Running Veracode scans(Dynamic and Static) minimum 12 scans/year - 40 hr/yr
+Fixing Pending VITS- 40 hr
+Patching 12 times Prod and Non prod - 20 hr
+3 Certificate rotation - 3 hr
+2 service accounts -1 hr
+2 client secrets -2 hr
+QA testing - 18 hr
+GitHub Migration & fixing pipeline issues - 3hr",,Software Engineering,,,
+000043,25/03/25,First American Abstract,Merged First American Abstract (FAAB)tooling into DirectPlant. This allows us to retire the stand alone First American Abstract .(Technology Optimization),Engineering team,Saved toil for maintenance,Jason Tiffany,Ramaswamy Subramanyan,150,"Calculated engineering toil effort wrt to Running veracode scans,Fixing Pending VITS,Rotating Password /Client Secret/Certificate renewal,QA testing, GitHub Migration, Technical Debt",No,No,No,"Running Veracode scans(Dynamic and Static) minimum 12 scans/year - 40 hr/yr
+Fixing Pending VITS- 2 hr
+2 Certificate rotation - 2 hr
+2 client secrets -2 hr
+Fixing Technical Debt- 80 hr
+QA testing - 24 hr",,Software Engineering,,,
+000044,25/03/25,DID Technology Research, A facility for technology exploration and experimentation,Engineering team,Saved toil for maintenance,Joseph Watt,Ramaswamy Subramanyan,10,Calculated time for fixing Pending VITS.,No,No,No,Fixing Pending VITS- 10 hr,,Software Engineering,,,
+000045,26/03/25,Corporate Systems - Financials,Eliminated Business manual processes by developing  new vendor spend and contract dashboards in Power BI. These dashboards reduce Procurement’s level of toil and decrease points of failure in their weekly reporting processes,Engineering team and  Procurement team,"Engineering team and  Procurement team is saving time with this process.  Developing contract and spend reporting in Power BI to empower procurement teams., minimize reliance on manually created reports, leading to savings of 750 hrs. yearly  in data processing time and domain hours across both business and IT spaces.​",Suresh Kumar,Suresh Kumar,750,Total time spent on manual creation minus the total time spend on Dashboards,No,No,No,,,Technology Services,,,
+000046,26/03/25,CenterPoint Thumbnail Generation/Optmization for Print Marketing Materials,"By enabling thumbnails to be generated asynchronously for any customizations made on the fly to be displayed across multiple workflow areas such as emails, job tickets, admin order details etc. without requiring users to wait on the page, this update has significantly improved efficiency and built confidence in file-to-order matching.",Print production team,"This improvement saves print production team at least 30minutes a day up to an hour, adding up to 130 hours per year. It not only allows them to focus on more efficient delivery and accelerate other tasks, but also reduces the risk of invalid sends and eliminates the frustration of manual reviews and eye-balling printed materials for accuracy.",Deivanai Vinaitheerthan/Surbhi Joshi,Deivanai Vinaitheerthan,130,We gathered the details around the time spent from print team stakeholders for items that require corrections on a daily basis and also also pulled data to identify the volume of items that need corrections on average.,Already done,No,No,"Time taken to rectify one marketing item: 15mins  (to double check, re-print, find the right printed materials amongst everything else etc.)
+Time save: Minimum 30 mins a day up to an hour depending on the volume of CP No Thumbnail orders 
+Total: 30mins a day adding up to 130 hrs a year / 52 weeks",,Software Engineering,,,
+000047,27/03/25,Cleanup of unattached EBS volumes,Clean up of unattached EBS Volumes which are created by ADO ASG Agents ,Platform Engineering – ARPS,More time to work on automation/coding.,Shaik Ahamed,Abhishek Maitrey,90,"Login to AWS Console.
+Sort all of the Unattached EBS volumes
+Delete all of Unattached EBS volumes.",Already done,No,No,"Production:
+AWS Account P1(931791518040)
+5mins average /day x 30 days x 12 months = 30 hours
+AWS Account P2(357466506819)
+5mins average /day x 30 days x 12 months = 30 hours
+Non-Production:
+AWS Account N1 (232412747220)
+5mins average /day x 30 days x 12 months = 30 hours",,Platform Engineering,PE SDLC Tools,,
+000048,27/03/25,Migration of FAI Client Device Provisioning from SCCM to Intune Autopilot,Convert the FAI workstation provisioning process from SCCM Task Sequence to Intune Autopilot to boost productivity and reduce human hours spent on the task.,IT Support team at FAI,The IT Support team at FAI will now be able to allocate more time to other responsibilities.,Kris Plaskey,Kris Plaskey,1350,FTE hours saved per unit deployed are based on estimated deployments for 2025. ,Already done,None,No,"(45 min/device x 150 devices/month) x 12 months = 81,000 minutes
+81,000 minutes / 60 = 1,350 hours
+",,Technology Services,,,
+000049,27/03/25,"AgentNet Production  - When rate calculations do not match examples or non-FA UW online calculations, it is cumbersome to trace the calculations through code or datadog/cloudwatch logs.","Rate Calculation Insight Log was created to capture how the rates calculate and which rate strategies are being used for the calculations, reducing troubleshooting time for QA and Support calls. The logs are captured in S3 with an automated expiration policy of 30 days to control storage costs.",ANP Product and Engineering Teams,Investing the time to create new stragies in order to handle more complex calculations.,Heidi Roman/Shakina Ebenezer,Heidi Roman,255,Old v New time process review ,no,no,no,"Saves 15 hours of troubleshooting time per Sprint for Dev's and QE  x 17 Sprints per year. As more production users are added, this time will increase and help support troubleshoot faster.",,,,,
+000050,27/03/25,AgentNet Production - Rate Cloning Accelerator,Cloning  the existing (non-FA) UW/State rates to other UW/States that have similar rates and calculations to avoid repetitve work and increase quick to market. JSON  to JSON.,ANP Product and Engineering Teams,"Increased the number of rates that are able to be completed per Sprint in order to complete the project sooner. Instead of 1UW/State per Sprint able to complete a minimum of 3 UW/State per Sprint. By completing the project sooner, team memebers can move on to other projects.",Heidi Roman/Shakina Ebenezer,Heidi Roman,462,Old v New time process review ,no,no,no,Old process took 8 hours new process takes 1 hour. 66 copy stories for a total reduction in hours of 462.,,,,,
+000051,27/03/25,AgentNet Production - ADO Worker Pool Agent Upgrade,Work with ARPS to update our worker agents in the ADO pipeline pool,ANP Product and Engineering Teams,Developers are using that time to work on other tasks they have and not wait for pipelines to execute.,Joseph Hale,Nate Olson,2917,Reduction in net build time,yes,no,Yes - We have further enhancement plans and leverage help using AI/ML and make some more improvements which will futher enhance the functional coverage of the tool,5-7 minutes per build saved,"number of builds per day = 100
+number of builds per hour = 10
+number of minutes per build saved = 7
+number of work days in a year = 250
+number of hours per year saved = (number of builds per day * number of minutes per build saved * number of work days in a year)/ 60 = 2916.67
+(GBL 04/24/25) Amar emailed additional information on 4/22 for Columns E and L which I pasted into this entry.",,,,
+000052,27/03/25,AgentNet Production - Mass Modify Tool,"The Mass Modify tool allows us to make changes to thousands of documents without an ANP Template developer manually touching and modifying each template for the same change, thereby reducing toil and completing the updates within minutes rather than days.",ANP Product and Engineering Teams,Though Soujanya's primary effort is in Agency Document Update board she is now also contributing to Agency Production Team and capacity is being used here.,"Soujanya,Courtney Harty",Amarnath CH.K.,265,development hours saved each time we run the tool is exponential.,No,No,Yes - We have further enhancement plans and leverage help using AI/ML and make some more improvements which will futher enhance the functional coverage of the tool,Estimated template development hours saved each time we run the tool is exponential.  Manual effort:  1972 documents x 2 minutes to update each document x 4 cycles/year = 15776 minutes. Using the tool: 10 mins x 4 cycyle per year = 40 minutes.  Over all efficiency improvement -  99.74% improvement ,"(GBL 04/24/25) Amar emailed additional information on 4/22 for Columns E, L, and M which I pasted into this entry.",,,,
+000053,27/03/25,AgentNet Production - GenAI - ATLAS ,"Automate template creation, training, and support processes through the Template Assistant in ANP","FA’s template developers, trainers, and customers
+","Capacity can be reallocated for strategic tasks, customer success, or reduced headcount.
+",Courtney Harty,Kurt Himebauch,5000,"50 customers × 20 documents/customer × 5 hours/document
+",Yes,Yes,Yes,"Pending Fabrik Production Environment finalization, implementation into ANP Frontend, Internal testing and adoption metrics","50 customers anticipated, 20 custom documents each, 5 hrs/document = 5,000 hrs/year
+",,,,
+000054,27/03/25,ClarityFirst Jira Consolidation,"Eliminated duplicate data entry into a Jira Program Schedule view in addition to ADO.  Now, one Jira is used for it all.  ",ClarityFirst Product Managers,Product Managers are able to focus on more user / outcomes research and building out more feature definition.  ,Jaime Dias,David Daukas ,650,Reduced duplicative data entry,No,None,No,30 mins / day * 5 Product Managers * 48 weeks; Plus 50 hours annually for leadership.,,,,,
+000055,31/03/25,SCI - Merge and Print,"Currently users are selecting 10 signor names one at a time, very manual and tedious effort. Solution is to create a automatic selection where signor names are defined at the group level, users can select a group and automatically selects 10 signors at once",SCI users,Team members will be able to put more hours into business operation activities once this feature is live in production. ,CleanFile,Sam Myoung,2400,measuring time it takes for one user to select one signor one at a time,No,None,admin UI to come later,30 users x saving 20 minutes per day per user x 20 business working days per month = 200 hours in savings per month x 12 = 2400 hours saved per year,,,,,
+000056,31/03/25,Field Services - CRE Projects,"By utilizing Quick Message email templates in Service First, we have streamlined the way project information is shared. These templates automatically populate emails with project details from Service First, eliminating the need for project managers to manually cut and paste information into Outlook email templates. This new process saves up to 5-10 minutes per email.",Field Services - Project Managers,Team - uses the extra time to keep the project notes and artifacts up to date. The goal it to find small time savers that help the team avoid overtime.,Nick Stueban,Jon Ezell,80,"Number of Announcements per Project: 4
+Time Saved per Announcement: 8 minutes
+Total Time Saved per Project: 4 announcements * 8 minutes = 32 minutes
+Number of CRE Projects per Year: 150
+Total Time Saved per Year: 32 minutes * 150 projects = 4800 minutes or 80 hours ",No,None,No,"Number of Announcements per Project: 4
+Time Saved per Announcement: 8 minutes
+Total Time Saved per Project: 4 announcements * 8 minutes = 32 minutes
+Number of CRE Projects per Year: 150
+Total Time Saved per Year: 32 minutes * 150 projects = 4800 minutes or 80 hours ",,,,,
+000057,03/27/25,"Agency Lender Enablement projects (FMS)
+",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Arun Shetty,Abhishek Maitrey,84,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,,"1. FMS - Automated build & deployment in Prod. Completed Terraform upgrade, WAF to WAFv2 migration in Prod.
+Total hrs savings = 84 per year",,Platform Engineering,PE Agency Lender Enablement,,
+000058,03/04/25,Direct Redirect Service,Utility used by Platform team to redirect Users to right URI. The application is retired.,Engineering team,Saved toil for maintenance,Joseph Watt,Ramaswamy Subramanyan,60,"Calculated engineering toil effort wrt to running
+Veracode Scans, fixing technical Debt ,GitHub Migration & QA testing",No,No,No,"No Security Exceptions
+Veracode Scans: 40 hours
+Technical Debt: 16 hours
+GitHub Migration: 3 hours
+QA testing: 1 hour",,Platform Engineering,PE Toil Busters,,
+000059,03/04/25,IgniteRE-Platform UI Sanity Automation,Reduction of time for manual testing. Team uses the sanity automation for each Non-prod/Prod deployments. Saving aprox 25 mins for each run.,Engineering team,"Engineering team is saving time with this, while eliminating manual effort for testing.  The time saved can be redirected towards further Automation scripts.",Pramod C/ Surbhi Joshi,Surbhi Joshi,210,Comparison of time by testing Manually and Post executing by automation script per run,Already done,No,No,"Before Automation - 40 minutes
+After Automation -  15 minutes—a solid 25-minute saving per run
+25 minutes per day for daily execution in Dev/UAT and minimum 24 times in Prod Environments by multiple each run which is coming aprox 210 hours/yr.",,Software Engineering,,,
+000060,03/04/25,DirectLegacyApps(Total of 20 applications),Automated Veracode and sonarqube Pipeline and also scheduled weekly scans,Engineering team,Saved toil for maintenance,Ramaswamy Subramanyan,Ramaswamy Subramanyan,800,"Total no of applications automated =20
+Average manual effort saved for scans(Static & Dynamic)  per application = 40 hr/yr
+Total effort saved = 20*40=800 hr/yr",No,No,No,"Total no of applications automated =20
+Average manual effort saved for scans(Static & Dynamic)  per application = 40 hr/yr
+Total effort saved = 20*40=800 hr/yr",,Software Engineering,,,
+000061,03/04/25,Developer Portal and CPLG ,QA automation completed for Developer Portal & CPLG applications,,Saved Manual Efforts for testing,Ramaswamy Subramanyan,Ramaswamy Subramanyan,24,"One run=2 hours
+Average 12 run per year =24 hours",No,No,No,"One run=2 hours
+Average 12 run per year =24 hours",,Software Engineering,,,
+000062,04/04/25,Navigator Auto deployment enhancement,"Build and Deployment using AMI based extended to all the environment, this changes helped to complete within 20 minutes against 90 minutes",Development team,"This effort gets utilized effectively by Dev team and Devops/SRE as well in development
+",Srinivasa Venkatesha,Srinivasa Venkatesha,276,"Build & Deployment Pipeline - changes helped to complete within 20 minutes against 90 minutes
+Month release count=20
+1 month = 70 min*20 days= ~23 hours
+1 year = 23 hr* 12 months = 276 hours",No,No,No,"Build & Deployment Pipeline - changes helped to complete within 20 minutes against 90 minutes
+Month release count=20
+1 month = 70 min*20 days= ~23 hours
+1 year = 23 hr* 12 months = 276 hours",,Software Engineering,,,
+000063,04/04/25,NPP Auto deployment ,NPP AMI based deployment - moving from Manual to Auto deployment. The AMI deployment takes just 5 minutes against 3 hours,Both Dev team and Devops/SRE,"Dev team able to use for development activity
+",Srinivasa Venkatesha,Srinivasa Venkatesha,72,"The AMI deployment takes just 5 minutes against 3 hours
+Month release count=2
+1 month = 2*3=6 hours
+1 Quarter = 6* 3 month = 18",No,No,No,"The AMI deployment takes just 5 minutes against 3 hours
+Month release count=2
+1 month = 2*3=6 hours
+1 Quarter = 6* 3 month = 18",,Software Engineering,,,
+000064,04/04/25,SCI Deployment Automation,Batch server deployment automation ,Platform Engineering,the deployment was manual and it was consuming developers effort in coordination with DevOps for the deployment and crucial time that can be concentrated towards business value can be gained with this activity.,Laxmi Nair,Suraj Ganesan,25,"Before automation average deployment - 15 mins  per Job. 
+Post Automation the time taken - 1 minute per job (Just to click the) 
+
+In Last 5 days - 10 deployments were triggered. 
+Effective Toil Reduction of - (Assuming 100-150 times deployment per year based on last year works) 
+Per Year saving - 25-40 hours Approx",No,No,No,"Before automation average deployment - 15 mins  per Job. 
+Post Automation the time taken - 1 minute per job (Just to click the) 
+
+In Last 5 days - 10 deployments were triggered. 
+Effective Toil Reduction of - (Assuming 100-150 times deployment per year based on last year works) 
+Per Year saving - 25-40 hours Approx",,Software Engineering,,,
+000065,04/04/25,Flexter DB Deployment Automation,Database deployment automation ,Platform Engineering,"Earlier DBA's had to login to SQL servers for doing the deployments , now it is through pipelines making the process seamless. ",Laxmi Nair,Shreeniwas Raman,76,"DB Release is planned - Weekly ( 1-2 Ticket) 
+Number of Environment - 
+Non Prod  Deployments / Day - 15 Mins -> (15*22*12) - 66 hours
+Per Weekly Release - savings of 5 minutes ( 52 Times)
+Code Release (Monthly - Savings of 15 Minutes ( 24 Times)
+For Year - Average Weekly Release -  4 Hours 
+Average Monthly Release - 6 hours ",No,No,No,"DB Release is planned - Weekly ( 1-2 Ticket) 
+Number of Environment - 
+Non Prod  Deployments / Day - 15 Mins -> (15*22*12) - 66 hours
+Per Weekly Release - savings of 5 minutes ( 52 Times)
+Code Release (Monthly - Savings of 15 Minutes ( 24 Times)
+For Year - Average Weekly Release -  4 Hours 
+Average Monthly Release - 6 hours ",,Software Engineering,,,
+000066,04/04/25,FMS code Auto Deployment,Code Deployment Automation,"Platform Engineering
+o Where is the newly available capacity of 84 hours being used now? - Both Dev team and Devops/SRE
+",,Srinivasa Venkatesha,Srinivasa Venkatesha,84,The manual release taking 8 hours/month for 2 releases,No,No,No,"Manual deployment is taking 4 hours, auto deployment will take 30 minutes 
+1 Month 2*3.5 = 7
+1 year 12* 7=84",,Software Engineering,,,
+000067,04/04/25,PWV/PER Weekly Checkpoint Cancelled,A weekly call to review outstanding PWV/PER status ,Policy Waiver/Exception Owners,"Policy Waiver/Exception Owners - no longer have to attend the meeting abd SF will be used to track the documentation required for reporting, time saved is used by the Mangers and leaders to address other concerns within their applications.",Ric Tucker,Ric Tucker,475,Attendance to weekly Meeting,No,No ,No,Number of scheduled attendees (~19) x 50 weeks* 30 min,,,,,
+000068,15/03/25,Automation script to modify the EBS Volume type as part of #lower-aws-spend,Reduce the manual effort to modify the instance type based on the usage and cost by creating the automation script,Engineeting Team,Engineeting Team used the saved time to further optimize the AWS cost savings which contributed to 100K YoY savings in AWS spending for Calculator Apps alone.,Nayan Kenchanagowdara,Nayan Kenchanagowdara,100,Manual operation would take about 5 minutes per volume per application and environment prone to errors not scalable,No,No,Yes. The Scripts could be shared with the multiple teams across the TSS org avoid reiventing the wheeel and reduce the toil.,"Calculated by takign about 5 mins per volume if we go by the manual way  including the Non-PROD and PROD/DR environments
+
+5(mins) * 100(#volumes) * 10(Applications) * 3(Environments) ~= 100(hrs)
+Now take this and multiple by the applications within the organization",The script could be shared with the ST2 org to maximize the savings and avoid having to reinvent the wheeel,Software Engineering,,,
+000069,10/04/25,ServiceFirst - Email Services Email/Domain Block/Unblock,Enabled automating the blocking and unblocking of email addresses or domains through the Email Services catalog item within ServiceFirst,InfoSec team,"InfoSec team, who rgularly requests domains to be blocked. End users trying to see if their request is blocked or not. Email services who needs to beform the block. People will use this time to do a better job with their other work.",ServiceFirst Development,Dominic Behnood,29,"Per the service owner, this will save their team time (30 mins per request) by eliminating the back and forth with requestors, and the time taken to manually fulfill the request. Based off the last 12 months of demand for the service, we can estimate the hours saved.",No,No,No,"Mins saved per request * Number of Requests (last 12 months)
+30*58=1740 mins = 29 hours",,Technology Services,,,
+000070,10/04/25,Automation improvement in FAST to reduce each deployment time by 2 hours,Reduced FAST deployment time by 54hours per year by reducing 2 hours of deployment time ,Engineering team,,Dilip Samanta,Dilip Samanta,54,Broke 1st and 2nd rolling batch deployment in Batch 1_1 and Batch 1_2 in parallel and Batch 2_1 and Bact 2_1 in parallel. Which reduced deployment time by 2 hours. There are production 27 deployment per year. Hence 27*2 hours = 54 hours reduced,No,No,No,2hours per deployment * 27 deployments = 54 hours saved,,Platform Engineering,PE FAST Enablement,,
+000071,10/04/25,DirectUX Certificate Rotation Automation,Automated Certificate Rotation using Terraform and Venafi for DirectUX,Platform Engineering,,Ben Tuttle,Ben Tuttle,1,"Counting one hour per annual certificate renewal to account for any downtime, research or external coordination needed for rotation",No,No,No,1 environment for DirectUX x 1 Hour Per year,,Platform Engineering,PE Toil Busters,,
+000072,10/04/25,Docs2Fast Certificate Rotation Automation,Automated Certificate Rotation using Terraform and Venafi for DirectUX,Platform Engineering,,Ben Tuttle,Ben Tuttle,3,"Counting one hour per annual certificate renewal to account for any downtime, research or external coordination needed for rotation",No,No,No,3 environment for Docs2Fast x 1 Hour Per year,,Platform Engineering,PE Toil Busters,,
+000073,11/04/25,Engineering Enablement for FAMS,Automate lower environment deployments and hand it over to Application teams to manage their environments,Platform Reliability Engineering Team,Team is now working on other initiatives/projects.,Prashant M Tiganibidari,D Akash Mohan,2736,It is calculated based on how long each deployment takes for the Platform Reliability Engineering team to do it manualy.,No,No,No,"Non-Prod Apps - 
+Avg Deployment Time = 1 hour
+Avg Wait Time Before Deployment is Picked Up = 2 hours
+Avg Deployment Per Month = 2
+Result = (3 hr * 2 deployments) * 12 months * 23 applications = 1656 hours
+Prod Apps - 
+Avg Deployment Time = 5 hours
+Avg Deployment Per Month = 2
+Result = (5 hr * 2 deployments) * 12 months * 9 applications = 1080 hours",,Platform Engineering,PE Reliability Engineering,,
+000074,11/04/25,Automated weekly and monthly routine Jira tasks,"Automated creation of weekly and monthly Jira tasks for routine patch-related work, including Patch Tuesday preparation, reducing manual tracking effort.",Windows Server Engineering,"Time is being redirected to strategic backlog work, enhancing Configuration Manager scripting, and streamlining other team workflows.",Mark Skiba,Kevin Quaintance,54,Manual creation of recurring Jira tasks (weekly operational items and monthly Patch Tuesday prep) previously took ~4 hours/month for weekly tasks and ~30 minutes/month for monthly tasks. Automation now generates these tasks via scheduled rules.,,,,Result = (4 hrs × 12 months) + (0.5 hrs × 12 months) = 54 hours saved per year.,,Platform Engineering,PE Server Engineering,,
+000075,11/04/25,SCCM Content Library Cleanup Automation,"Automated SCCM content cleanup process across DPs, eliminating manual effort and reducing runtime from 20 to 6 days.",Windows Server Engineering,Time is being redirected to automation initiatives and closing out longstanding technical debt and documentation gaps.,Mark Skiba,Kevin Quaintance,672,"Prior to automation, the ContentLibraryCleanup.exe tool had to be manually run, monitored, and manually stepped through, often over several hours per day. It was not running continuously, and progress stalled without manual input. Each run took approximately 20 days of total elapsed runtime across different distribution points. Automation scripting now allows us to run the same tasks across all DPs, reducing runtime to ~6 days.  ",,,,Result = (20 days – 6 days) × 24 hrs × 2 runs/year = 672 hours saved.,,Platform Engineering,PE Server Engineering,,
+000076,11/04/25,Expanded Yearly SUGs/DEPs Creation and Deployment into Yearly Script Automation,Replaced manual yearly setup of update groups and deployments with a reusable script for consistent and efficient rollout.,Windows Server Engineering,Time is being redirected to supporting backlog tasks like software update administration documentation and continual service improvement efforts.,Mark Skiba,Kevin Quaintance,10,"Previously, creating yearly software update groups and deployments was a manual process taking ~10 hours annually during January planning. This effort is now trigger automated through a reusable PowerShell script.",,,,Result = 10 hours/yr saved as a result of automating the efforts that were previously manual.,,Platform Engineering,PE Server Engineering,,
+000077,14/01/25,CF Test coverage innacurate reporting,Resolving the root cause of a 7 year old test coverage issue(s) in the ClarityFirst frontend TypeScript code.,Every single engineer writing unit tests for CF will now have more time for development/coding. ,More time for development/coding. ,Mark Sorce,Mark Sorce,120,"Time spent writing unit tests, some people, that have personally reached out to me have spent multiple sprints with some effort trying to figure out why they can't increase code coverage",No,No,No,2+hrs average/week x 12 months = 120 hrs,,,,,
+000078,15/04/25,Clarityfirst E2E tests parallel execution,"Execution of Clarityfirst E2E tests are now done in multiple agents in parallel and hence the execution is getting completed in ~1hr
+Earlier Clarityfirst E2E tests were getting executed only in 2 agents and hence the execution was taking ~3hrs",Entire clarityfirst team,"Entire clarityfirst team would have a positive impact, because once the build is deployed, the E2E tests are executed and the results are available in a shorter span now. The results are helpful for the engineering, product and release teams to understand the quality of build within a short span of time. ",Chethan Shivaramu,Chethan Shivaramu,96,"ADO Pipeline has the execution details which is used to measure the benefit.  API Tests are excluded in the count below.
+
+Prior to this change 
+
+Total number of tests before = 444 (Including standard pre-test orders creation.  Pre-Test order creation ~ 50 tests)
+Execution time = ~3hr
+
+After this change
+
+Total number of tests after = 415 (Pre-Test orders creation is not accounted for number of tests)
+Execution time = ~1hr",No,No,"Yes, with concurrent executions in each agent machines, we can still reduce the execution time","Time saved per execution = 2hrs
+Number of executions averaged per month = 4
+Time saved per month = 4 x 2hrs = 8 hrs
+Total saving per year = 8hrs x 12 = 96 hrs
+
+Execution Details:
+- Staging bi-weekly deployments, hence two fixed runs
+-  Fix any E2E failures and rerun
+-  Execution of the tests for hot fix deployments
+-  Execution of the tests for Dev regression 
+From ADO history, this is averged to 4 runs in month and hence will have 8hrs of saving per month",,Software Engineering,,,
+000079,17/04/25,Spreadsheet for Product Institute Cohorts,Worked with HR to create a report to greatly reduce the manual updating of the Product Institute Cohort spreadsheet.,Single person impact - Cherie Nicholson,I am using the gained time for other duties and random requests that come my way.,Cherie Nicholson,Cherie Nicholson,48,"I used a timer to calculate how long it took to reconcile the spreadsheet after the custom report was made available to me. The original time was an estimate, not specifically timed. Average was 4.5 hours, new time is 35 minutes.",No,No,No,"I calculated it based on how long it used to take to reconcile the spreadsheet (4-5 hours) minus the amount of time it now takes (35 minutes). Using an average of 4 hour savings per month times 12, the new custom report from HR saves me about 48 hours a year.",,,,,
+000080,04/21/25,"Agency Lender Enablement projects (EWB, SCI, Navigator)
+",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Arun Shetty,Abhishek Maitrey,44,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,,"1. EWB - ADO pipelines for IIS and Service restart for EWB - DR Swing. Saving 20 hours yearly
+2. SCI- CyberArk Password rotation using Jenkins Pipeline. Saving 8 hours per year.
+3. Navigator- Navigator Database Deployment Automation using Jenkins pipeline. Saving 16 hours per year.
+Total hrs savings = 44 per year",,Platform Engineering,PE Agency Lender Enablement,,
+000081,21/04/25,New Pipeline for DNA GitHub Repo,"New Pipeline creation for DNA infra. 
+Automated PR request ",DNA Team,,Prem Kumar Alla,Shubhand Vasudevan,100,Time spend by DNA & Ops team,Already done,No,,200 PR's per year. Manual 30 minutes will spend. So total 100 hours,,Platform Engineering,PE DNA Engineering Enablement,,
+000082,21/04/25,Creating Private endpoint on existing resources,Automated Private endpoint for existing storage account in Azure,DNA Team,,Prem Kumar Alla,Shubhand Vasudevan,120,Time spend by DNA & Ops team,Already done,No,,50 PE * 30 minutes,,Platform Engineering,PE DNA Engineering Enablement,,
+000083,21/04/25,Cert’s renewal on DNA Non-prod applications,Certificate Renewal of 219 non-pord url's completed,DNA Team,,Prem Kumar Alla,Shubhand Vasudevan,1314,"Time spend by DNA & Ops, Sec Ops  teams",Already done,No,,100 Certificate * 8 hours,,Platform Engineering,PE DNA Engineering Enablement,,
+000084,21/04/25,VMSS Deployment autaomtion,VMSS deployment in Az Cloud,DNA Team,,Prem Kumar Alla,Shubhand Vasudevan,480,Time spend by DNA & Ops team,Already done,no,,50 Deployment per year * 8 hours,,Platform Engineering,PE DNA Engineering Enablement,,
+000085,21/04/25,DR Automation of SRE Steps,"Automate the DR steps previously performed by SREs for FAST, Ignite, FASSNotary, AMP & Navigator",Platform Reliability Engineering,Majority of the team avoided working on weekend to support DR activity.,Deepa Kini,D Akash Mohan,142,It is calculated by comparing this year's DR data with last years and finding out the improvement.,No,No,No,"DR Automation - 
+FAST Suite -
+Time Saved During Swing to DR = 135-75 = 60 mins
+Time Saved During Swing Back = 105-60 = 45 mins
+Time Saved By No Involvement of SRE & DevOps = 75 hours (15 hours * 5 people)
+Total Time Saved = 76.75 hours
+Ignite - 
+Time Saved During Swing to DR = 15 mins
+Time Saved During Swing Back = 15 mins
+Time Saved By No Involvement of SRE & DevOps = 16 hours (8 hours * 2 people)
+Total Time Saved = 16.5 hours
+AMP - 
+Time Saved By No Involvement of SRE & DevOps = 16 hours (8 hours * 2 people)
+
+FASSNotary - 
+Time Saved By No Involvement of SRE & DevOps = 16 hours (8 hours * 2 people)
+
+Navigator - 
+Time Saved By No Involvement of SRE & DevOps = 16 hours (8 hours * 2 people)
+
+Note: This is in comparison from last year.",,Platform Engineering,PE Reliability Engineering,,
+000086,21/04/25,Cloud Support,"We are assisting Liatrio Team for reclaiming hundreds of unattached EBS volumes as part of ""Lower AWS Spend"" project. Deleting the EBS volumes indivisually takes time. We have created a script to delete multiple unattached EBS volumes which will reduce the time spent for this effort.",Cloud Support POD,This will help in reducing the headcount or reallocating people for different project.,Ranjith Y L ,Amulya Rout,24,Time spent by Cloud Support POD,No,No,No,2 Hrs saved per month and total hours saved per year = 24 Hrs. This again depends on howmany EBS volumes deletion we perform in a month. For April 2025 so far we have deleted 83 unused EBS volumes. This may vary month to month.,,Platform Engineering,PE Cloud Engineering,,
+000087,21/04/25,Cloud Support,"We are assisting Liatrio Team for reclaiming hundreds of unattached EBS volumes as part of ""Lower AWS Spend"" project. During the deletion of production volumes some of the App teams asking us to take the snapshot of the volumes before deleting them. Taking snapshot of multiple volumes is time consuming so we have created a script to take snapshot of multiple EBS volumes before deleting them.",Cloud Support POD,This will help in reducing the headcount or reallocating people for different project.,AnandaKumara,Amulya Rout,12,Time spent by Cloud Support POD,No,No,No,1 Hr saved per month and total hours saved per year = 12 Hrs. This again depends on howmany App teams request for the snapshots.,,Platform Engineering,PE Cloud Engineering,,
+000088,04/24/25,"Agency Lender Enablement projects (MyFams, FassNotary, FAMOS)
+",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Arun Shetty,Abhishek Maitrey,78,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,,"1. MyFams, FassNotary - Database Deployment Automation using Jenkins pipelines. Saving 72 hours yearly
+2. FAMOS- CyberArk Password rotation using Jenkins Pipeline. Saving 6 hours per year.
+
+Total hrs savings = 78 per year",,Platform Engineering,PE Agency Lender Enablement,,
+000089,24/04/25,Automated daily monitoring checks through scripted custom reporting,Automates daily environment checks to reduce manual monitoring and improve visibility into potential issues.,Windows Server Engineering,"Time is now used to expand automation to more areas, improve reporting detail, and tackle infrastructure backlog items.",Mark Skiba,Mark Skiba,43,"Daily manual checks for system health, disk space, backups, and CMG status previously took ~10 minutes per weekday. These tasks are now automated through reporting, enabling quicker visibility into issues with less manual effort.",No,No,No,Result = 10 minutes/day × 5 days/week × 52 weeks/year = ~43 hours/year saved,,Platform Engineering,PE Server Engineering,,
+000090,28/04/25,Service Recovery Management Service Delivery Report,The Service Recovery Management team was preparing a monthly report (Service Delivery Report) that was reporting metrics around P1/P2 incidents to a small audience in FAI.  This was duplicative of other metrics already being captured around P1/P2 incidents.  We've stopped this monthly work and will include the FAI recipients in the distribution of the existing metrics. ,Service Recovery Management,Focus on other areas to improve the SRM process. ,Adam Gearhart,Adam Gearhart,48,This was taking the team approximately 4 hours a month to prepare. ,No,No,No,4 hours a month x 12,,,,,
+000091,08/05/25,"IgniteRE-Classes, automation",Reduction of time for manual testing. Team uses the regression automation for Non-prod deployments. Saving aprox 260 mins for each run.,Engineering team,"Engineering team is saving time with this, while eliminating manual effort for testing.  The time saved can be redirected towards further Automation scripts.",Bhoomika H N/ Surbhi Joshi,Surbhi Joshi,338,Comparison of time by testing Manually and Post executing by automation script per run,Already done,No,No,"Before Automation - 5 Hours
+After Automation -  40 minutes—a solid 260-minutes saving per run
+260 minutes per sprint for execution in Dev/UAT/CERT and minimum 26 times in a year for all 3 non-prod environment by multiple each run which is coming aprox 338 hours/yr.",,Software Engineering,,,
+000092,27/05/25,Docutech Inactive user deletion,Automated deletion of okta users using github pipeline which removes inactive dummy users on timely basis,Docutech IT team which gives back time of 144 hours per year,"Docutech IT team, is now able to leverage the time saved into other automation initiatives",Dilip Samanta,Dilip Samanta,144,It was entirely manual of 2 hours of daily work.,Already Done,No,No,12hours / month * 12 months = 144 hours per year,,,,,
+000093,05/02/25,"Agency Lender Enablement projects (SCI, NTX)
+",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Arun Shetty,Abhishek Maitrey,132,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,o,"1. SCI - Staging Infrastructure Upgrade/Downgrade automation using Jenkins for load testing activities. Saving 96 hours yearly.
+2. NTX - Database Deployment Automation using Jenkins pipelines. Saving 36 hours yearly
+
+Total hrs savings = 132 per year",,Platform Engineering,PE Agency Lender Enablement,,
+000094,05/14/25,FAST - Signature Signing Enhancements,FAST Signature Signing screen was enhanced based on request from Mortgage Solutions. New fields were added to capture additional details about Notary. Enhancement was made to capture the type of Signing (RON / Hybrid / IPEN).,"FAST Users from Mortgage Services.
+
+",FAMS Users can efficiently handle eClose orders with this enhancement.,TSS Closing,Chethan Venkatesh,1820,"By comparing the before and after enhancement time used by FAST Users. 
+Verified the time savings with the SMEs from Mortgage Services.","None, the enhancement is live as part of a FAST Biweekly release in Jan 2025.",No,No,"Outcome from Signature Signing Enhancements:
+Savings for Operations - 1 to 2 Minutes Per Order.
+Savings for FASS Notary - 3 to 5 Minutes Per Order.
+In total, 6 to 7 minutes Per Order.
+
+Operations - Savings per touch to confirm the order path and tracking the documents (FAST has started tracking the type of Signing)
+FASS - Making sure the order is assigned to the correct notary to complete the signing (FAST has started capturing additional details of the Notary)
+
+On an average, if we consider 1300 Signing Requests Per Month (14400 in 2024, 5900 in first 4 months of 2025), we are looking at Saving 9,100 Mins OR 151 Hours Per Month for the Users.
+In total, 1820 Hours Savings Per Year.",,Software Engineering,Core Data Shared Services,,
+000095,05/14/25,FAST - IBA Enhancement for Datafix reduction,"Divisions used to reach out to Operations / Domain Teams to provide Data Fixes for IBA. FAST doesn’t allow to close an IBA same day. So, branch users do Partial withdrawal and withdraw the entire outstanding balance. If the IBA must be closed on the same day for various business reasons, they request for data fix. There are frequent data fix requests being made due to this. ","FAST Users (Escrow) who used to submit & wait for datafix to be completed &
+
+Engineering Teams who worked on Datafixes",Engineering teams can better focus on other activities rather than spending time on repetitive tasks like datafixes,TSS Closing,Chethan Venkatesh,175,Number of Datafixes which used to come vs the effort spent to address,"None, the enhancement is live as part of a FAST Biweekly release in Feb 2025.",No,No,"Operations / Domain Team get minimum of 2 IBA Data Fix requests every month due to the Partial Withdrawal discrepancy. 
+On an average, 20 to 25 requests per year.
+Ops team / Engineer spends 7 hours (end to end) for each data fix request (analysis / data fix script creation / PR approval from DBA / Non-prod testing / UAT approval / Prod deployment / communication etc.).
+With this enhancement, we will save ~175 hours per year spent on IBA Data fixes .",,Software Engineering,Core Data Shared Services,,
+000096,05/14/25,FAST - HRIS Integration for Wire Fraud Detection,500000+ wire transactions happen from FAST every year. Internal Audit team used to manually verify a small set of Wires trasmitted from FAST to check for wire fraud. A new Windows job has been created to collate all successful transmitted wire data from FAST. This information will be sent to HRIS team who will process the data to identify any potential fraudualent activity and submit an output to Internal Audit team. ,"Internal Audit Team 
+
+Time Savings in Manual verification of wire transfer data.
+","Internal Audit will be able to identify, contain and possibly even halt misappropriated funds and/or other potential fraudulent activity.",TSS Closing,Chethan Venkatesh,84,"By considering the manual time, the activity used to take every month",None - Initiative went live in May 2025,No,No,"Internal Audit Team spends 6 to 7 Hours every month to manually go through a sub set of wire transactions which has happened from FAST for selected offices.
+With this enhancement, FAST along with HRIS has automated the collation and verification of wire transactions which has happened and provide an output to Internal Audit for future action.
+Overall, this will bring in savings of ~ 84 Hours Per Year. ",,Software Engineering,Core Data Shared Services,,
+000097,05/14/25,FAST - Root Cause Fix for Oracle reported FAST Fee Exceptions,Oracle teams face FAST fee exceptions regularly related to Property Amount is not equal to Retained Amount. Oracle is applying data fix on a regular basis. ,"Oracle team
+
+Engineers who are supporting Oracle data fixes",Engineering teams can better focus on other activities rather than spending time on repetitive tasks like datafixes,TSS Closing,Chethan Venkatesh,60,Number of Datafixes which used to come vs the effort spent to address,"None, the enhancement is planned to Go Live in May 2025",No,No,"Oracle team receives on an average 4 to 5 data fix requests every month (Approx 60 datafixes per year)
+They spend more than 1 hour for end-to-end for data fix implementation. 
+The root cause fixes from FAST end will save approximately 60 hours of engineering effort per year. ",,Software Engineering,Core Data Shared Services,,
+000098,05/16/25,DocStar NW,"This application is migrated into Direct Vault. 
+We will be retiring this application",Engineering team,Saved Toil for maintenance and spend time for meeting technology optimization efforts,Direct Vault team,Ramaswamy Subramanyan,63,"Fixing Tech debts,GitHub migration and QA testing",No,No,No,"20 hrs (Node and React upgrade)
+3 hr(Migration and Fixing any GitHub issues)
+24 hrs for creating pipelines in Github and testing and deploying
+16 hrs QA testing",,Software Engineering,,,
+000099,05/16/25,IMTC (Internal Metropolitan Title Company) ,"This application is migrated into Direct Vault. 
+We will be retiring this application",Engineering team,Saved Toil for maintenance and spend time for technology optimization efforts,Direct Vault team,Ramaswamy Subramanyan,58,"Fixing Tech debts,GitHub migration and QA testing",No,No,No,"15 hrs(Node and React upgrade)
+3 hr Migration and Fixing  GitHub issues
+24 hrs for creating pipelines in Github and testing and deploying
+16 hrs of QA testing",,Software Engineering,,,
+000100,05/21/25,MailToBorrower and Signing Approvals,"The Automated Navigator-Fusion application streamlines the process of sending reports to MailToBorrower and Signing Approvals. If any issues arise during order processing, the application automatically sends a detailed report. Otherwise, the DBA team must manually execute SQL queries in both the Navigator and Fusion databases to gather the necessary information. This data is then forwarded to the Product team, who subsequently emails the details to the business team to ensure smooth order processing.",Engineering team and Product Team,"Engineering and Product teams can now concentrate on higher-priority tasks, rather than spending time on repetitive manual activities like providing order status updates. This shift allows for more efficient use of resources and enhances overall productivity.",Suresha Banjan,Jagadish Shastri,120,"To ensure efficient data processing, allocate 30 minutes daily to execute SQL queries in the Navigator DB. The resulting data will then be processed against the Fusion DB (PostgreSQL). Subsequently, this output will serve as input for the Navigator DB. Finally, share the compiled results with the product and business teams in an Excel sheet. This manual effort is saved.","No, this has been released to production on 5/15 (RFC: CHG0326728)",No,No,"Per Day: 30 minutes
+DBA Activities
+	Writing a query-1 with parameter in Navigator: 5 minutes
+	Writing a query-2 with output of query-1 with parameter in Fusion DB: 5 minutes
+	Writing a query-3 with output of query-2 with parameter in Navigator DB: 5 minutes
+	Copy the final results into Excel sheet:5 minutes
+	Draft an email with required participant (only Engineering team): 5 minutes
+	
+Product Team:
+	Once Product team receive email from DBA team, review the information's in email and send an email to business team: 5 minutes
+	
+Per week: 30 minutes * 5 days = 2.5 hours
+Per month: 2.5 hours * 4 weeks = 10 hours
+Per Year: 10 hours * 12 months = 120 hours",,Software Engineering,,,
+000101,05/22/25,"Agency Lender Enablement projects (LA.com, Navigator)
+",Enabled engineering teams with self service.,Agency Lender Enablement team,Focus on the several other projects to automate.,Khanderav Appa Mali,Abhishek Maitrey,103,Time spend by Agency Lender Enablement/Ops team to deploy project teams.,Already done,no,,"1. Automated DB deployment for LA.com application saving 96 hours of yearly toil.
+
+2. Automated CyberArk password rotation for Navigator app saving 7 hours of yearly toil. 
+
+Total hrs savings = 103 per year",,,,,
+000102,05/26/25,Automating User Access for LA.COM application,"LA.COM is an integration system and it has internal portal to where product and business team will add or modify the customer details. To access this portal as a new user, its required to insert user details from database and every time application team will be involved to execute this process. Hence, creating an user process has been automated.","Application Team, Product Team and Business Team","Application team can focus on other technical task, and Product and Business team can create user without Application team involvement",M Lokesh,Jagadish Shastri,24,"Creating an user story and communicating to user after access provision: 15 minutes (BSA)
+Writing SQL Scripts: 15 minutes (Developer)
+Creating release implementation plan and submitting RFC: 15 minutes (Release Manager)
+Testing the user story and closing all tickets: 15 minutes (Tester)
+Total 1 hours
+2 request in month = 2 * 1 hour = 2 hours
+Per year: 12 months * 2 hours = 24 hours","No, this has been released to production on 1/12 (RFC: CHG0317981)",No,No,"Creating an user story and communicating to user after access provision: 15 minutes (BSA)
+Writing SQL Scripts: 15 minutes (Developer)
+Creating release implementation plan and submitting RFC: 15 minutes (Release Manager)
+Testing the user story and closing all tickets: 15 minutes (Tester)
+Total 1 hours
+2 request in month = 2 * 1 hour = 2 hours
+Per year: 12 months * 2 hours = 24 hours",,,,,
+000103,06/04/25,FirstFunding Wire Audit Review screens Performance improvement,"The Wire Audit Review screens have been problematic since FirstFunding's increased volume levels.  The working screen for that part of the application had reached an average load time of 20+ seconds, and every loan FirstFunding funds has to go through that process.  After some discovery, Steve was able to find some expensive queries embedded in the process, some of which were no longer needed in the application.  After some clean up and some optimization, that same page now hits an average load time of 300ms.  FirstFunding is now funding around 10,000 loans per month.  So that is a 20 second improvement for 10k loans every month. That's an estimated savings to the operation team of 3,333 minutes (56 hours) per month!  Definitely something we will add to our toil-busting numbers!",All users on the FirstFunding Production system: FirstFunding Operations Team,"Improved application responsiveness system wide. This page is loaded multiple times for every loan, and hits the database every time. As a result every time the page is loaded, there is an effect on any user navigating or using the system to edit or load data.","Steve Johnson (
+stjohnson@firstam.com)",Anthony Beck,667,"20 seconds per loan load
+1200000 loans per year
+20 * 120000 = 2,400,000 seconds
+/60 = 40,000 minutes
+/60 = 667 hours",Code is in production. We're saving already and our Production OTEL confirms the performance has improved.,,,"20 seconds per loan load
+1200000 loans per year
+20 * 120000 = 2,400,000 seconds
+/60 = 40,000 minutes
+/60 = 667 hours",,,,,
+000104,06/06/25,Clarityfirst PROD Sanity Automation,"PROD Sanity test for Clarityfirst is now automated and the scripts via pipeline.  The script execution is added as a stage in PROD deployment pipeline.  Hence, post deployment of any new build the sanity test would get executed.  This would elimate the 30 mins of manual effort for every release.  With bi weekly releases, this would bring in 1 hour of saving per month and total of 12 hours of saving per year",Clarityfirst QA Team,PROD sanity for Clarityfirst would now be done with 0 manual efforts.,Saradhi Vijay,BalaKavitha G,12,"Time taken for manual Sanity : 30 mins
+Number of tests per month : 2
+Number of tests per year : 24
+Time taken for sanity with automation scripts : 7 mins
+Time saved per execution : 30 mins (as 0 manual efforts for execution)
+Savings per year : 24 * 30 mins = 720 mins = 12 hrs",No,No,Training environment sanity automation also in progress.  Clarityfirst Training is treated same as PROD and the training sanity automation also would be added to the PROD pipeline.,"Time taken for manual Sanity : 30 mins
+Number of tests per month : 2
+Number of tests per year : 24
+Time taken for sanity with automation scripts : 7 mins
+Time saved per execution : 23 mins
+Savings per year : 24 * 23 = 552 mins = 9 hrs",,,,,
+000105,06/06/25,Fusion Bitbucket -> GitHub Migration,"Migration of all Fusion code repositories from BitBucket to GitHub required moving of nearly 200 repositories, all with slightly different parameters, and with knock-on effects in Jenkins. Between high-level strategy, AI-created (human evaluated) scripts, CLI integration, and some intervention and assistance for org-level GitHub configuration, a few people were able to get this move done in about a week.",Fusion Engineering,Continue work seamlessly on Fusion as a platform.,"Shahid Siddiqui, Jacob Baggs, Thyya Ung, Abhijeet Ubale, Greyson Richey",Greyson Richey,260,"Hours to clone, pull, check branches, check BB repo config, template CODEOWNERS, template dependabot, mirror to GitHub = 1 x repo_count
+Hours to configure new GH repo with correct branch settings and set up Jenkins web hook config = 0.2 x repo_count
+Hours to configure Jenkins to point at new GH repository without spinning up builds for all branches = 0.1 * repo_count",N/A,N/A,N/A,"Hours to clone, pull, check branches, check BB repo config, template CODEOWNERS, template dependabot, mirror to GitHub = 1 x repo_count
+Hours to configure new GH repo with correct branch settings and set up Jenkins web hook config = 0.2 x repo_count
+Hours to configure Jenkins to point at new GH repository without spinning up builds for all branches = 0.1 * repo_count",,,,,
+000106,06/11/25,Corporate Systems – Enterprise Performance Management ,Automate the Workday data file load that is received from DW team .Automated the process to directly consume data from Snowflake Database,Engineering team,Engineering time can focus on other areas of work and invest more time into process improvements.,Hyperion EPM Team,Phani Annangi,48,Time saved in automating a manual data load.,No,No,No,"4 hours saved per month. Time saved in avoiding ,
+File request and work with the team ,File preparation and data load to Essbase.",,Platform Engineering,,,
+000107,06/11/25,Corporate Systems – Enterprise Performance Management ,Optimized the Capex Depreciation calculation Process on EPM FCT Application by tuning code.,Engineering team,Engineering time can focus on other areas of work and invest more time into process improvements.,Hyperion EPM Team,Phani Annangi,7.5,Time Saved for FCT Business to complete the Capex Depreciation Calculation .Reduced 45mins of processing time from 1hr to 15mins.,No,No,No,7.5 hours Annually.Activity is performed 4 times a year by Business during Forecast cycles and once during Budget saving ~45 mins each time,,Platform Engineering,,,
+000108,06/16/25,FAST - Local setup installation automation,Automate the application code setup on local laptop using Powershell scripting. Now developers can setup with one click,Engineering team,FAST developers can now focus more on core area of development,Sai Chippada,Sriharsha Karagodu,750,Tme saved per developer every month,No,No,No,Time saved (on average) multiplied by 12 months  for each developer (2.5*25*12),,Software Engineering,Core Data Shared Services,,
+000109,06/16/25,Wirelink - Certificate renewal automation ,Automation of the application certificate renewals that expires every year,Engineering team,Wirelink team can work on their project deliverable without distraction of this small operation work,Swapna Ashok Goveshwar,Sriharsha Karagodu,40,Time saved for the processes in the year for 4 such cert renewals,No,No,No,10 hours for each renewal * 4 such renewals in year,,Software Engineering,Core Data Shared Services,,
+000110,06/16/25,Wirelink - E2E test automation ,"Automation of Manual Testing for wirelink in all types of testing, like Regression, Sanity and round trip testing. These testing are repeated ",Engineering team,Wirelink team can focus on more productive work of core development and improve any other processes,Meghana S,Sriharsha Karagodu,388,Total time saved for testing and adhoc requests for earch release for the year. ,No,No,No,"Typically 10 releases per year and adhoc requests for testing
+QA  - 10 times x 15 hrs - 150
+Round trip - 15 times x 7 hours - 105 hours
+regression - 15 times x 3.5 hrs - 52.5 hours
+sanity - 40 times x 2 hrs - 80 hours",Harsha emailed the computation details on 6/25.  The computaton resulted in additional 8 hours.  Total savings and computation are now updated per the email. (GBL 06/25/25),Software Engineering,Core Data Shared Services,,
+000111,06/16/25,FAST - IP testing automation,Automation of the IP testing for FAST releases and eliminate dependency on other teams for certifying the release build,Engineering team,FAST team now has no dependency on other IPs to test its deliverable. Team can focus on stabilizing release build and improve quality,Karthik Krishnamoorty,Sriharsha Karagodu,96,Total time saved during release by automating the IP testing of FAST releases.,No,No,No, 4.5 hours saved each time during 21 releases,,Software Engineering,Core Data Shared Services,,
+000112,06/16/25,Stretegic Ops Power BI Dashboards Query optimization,Optimization of the query stps used to generate an interactive dashboard that pulls the data from multiple Jira projects into a couple of tesm/products dashboards,Strategic ops,Spend more time doing discovery work in building advance dashboards utilizing other data sources. And coaching ,Carlo Villegas,Carlo Villegas,250,"Daily total query time is 3 hours for 4 dashboards executed 4 days a week. This includes extraction, transformation and loading of hundreds of thousands of rows of data into the powerbi data model. Multi tasking is very minimal since this activity consumes a lot of the laptop memory to execute. So the optimization saved 50% from the total time spent at an 80% efficiency.",No,No,Fix the REST API call automation between jira and powerbi service to enable full automation within the cloud.,1.5 hours per day x 4 days a week manual refresh x  52 weeks x 80% efficiency factor,,,,,
+000113,06/16/25,eStatus Single Click Deployment,"Automated eStatus application deployment end to end across Dev, Stage and Prod",Platform Reliability Engineering,Team is now working on other initiatives/projects.,Shalini B,D Akash Mohan,120,Time spent by Reliability Engineering team to do support eStatus deployments,No,No,No,5 hrs(per day) * 2 (biweekly deployment) * 12 (months) = 120 hrs,,Platform Engineering,PE Reliability Engineering,,
+000114,06/17/25,Corporate Systems – Enterprise Performance Management ,US reporting cube (Fincube) automation optimization,Engineering team,Engineering time can focus on other areas of work and invest more time into process improvements.,Hyperion EPM Team,Chethan Kumar,900,The team has successfully implemented a configuration change which substantially reduced the total daily automation time by 3 hours.,No,No,No,"Saved 3 hours approx daily. We run many critical nightly automations and data loads during off business hours to ensure the latest and greatest data is available every morning for business reporting.
+3 hours daily * 6 times a week * 12 Months =  Approx 900 hours",,Platform Engineering,,,
+000115,06/17/25,ServiceFirst - Security Group Management automation - Delete Group and Update Ownerd,Expand upon existing automation to include support to automate the deletion and updating of ownership of on-prem AD groups.,Identity and Access Management Operations (IAM Ops) ,TBD,ServiceFirst Development,Dominic Behnood,43,There were 61 Delete Requests and 199 Change Owner Requests over the last 12 months. Each request saves 10 mins on average.,No,No,No,There were 61 Delete Requests and 199 Change Owner Requests over the last 12 months. Each request saves 10 mins on average.,,Platform Engineering,PE Service First,,
+000116,06/17/25,ServiceFirst - VDI Provisioning Automation,Leverage existing AAD integration to automate adding users to automate adding users to the correct group to gain access to one of the various VDI environments,Virtual Desktop Services,TBD,ServiceFirst Development,Dominic Behnood,123,There were 494 Requests over the last 12 months. Per Kris Plaskey this automation saves 15 mins per Request on average.,No,No,No,There were 494 Requests over the last 12 months. Per Kris Plaskey this automation saves 15 mins per Request on average.,,Platform Engineering,PE Service First,,
+000117,06/17/25,ServiceFirst - box.com access automation,Leverage existing AD integration to automate adding the requester to the necessary group needed to gain access.,Identity and Access Management Operations (IAM Ops) ,TBD,ServiceFirst Development,Dominic Behnood,30,There were 49 Requests over the last 12 months. Each saves 10 mins per Request.,No,No,No,There were 49 Requests over the last 12 months. Each saves 10 mins per Request.,,Platform Engineering,PE Service First,,
+000118,06/17/25,ServiceFirst - Distribution List Automation,"Integrate with SailPoint IIQ to automate creating,deleting, and updating owners of distribution lists, as well as adding/removing users to/from DL Groups.",Identity and Access Management Operations (IAM Ops) ,TBD,ServiceFirst Development,Dominic Behnood,252,There were 1517 Request over the last 12 months. Each saves 10 mins per Request.,No,No,No,There were 1517 Request over the last 12 months. Each saves 10 mins per Request.,,Platform Engineering,PE Service First,,
+000119,06/18/25,Enterprise Observability - Slack Connector Setup,"Leverage IAC to manage Slack Connectors, enabling teams to self service if desired and reduce manual clickops setup of connector requests submitted to the Enterprise Observability Team",Enterprise Observability Team & Customers,Teams can move faster since they no longer have to wait for a request to be completed before sending alerts to a Slack channel.,Enterprise Observability,Michael Holt,15,"There were 30 requests fulfilled YTD, each one saves about 10 minutes",No,No,No,"There were 30 requests fulfilled YTD, each one saves about 10 minutes.",,,,,
+000120,06/16/25,Title/Tax/Payoff Enhancement in myFAMS,"Automated below manual process for the business team to process the order:
+	1. Email is received
+	2. Associate reviews emails
+	3. Associate does a search in FAST for the order
+	4. Reviews workflow
+	5. Manually adds the requested workflow to File Workflow
+Responds to email",Mortgage Solution Business Team,Team can process the order quickly and save significant of time with bulk orders and manual error will be eliminated. And focus on other taks and minimize the delay in the process.,Jagadish Shastri,Jagadish Shastri,450,5 minutes per order saved for the business team to process it and expecting around 5400 order per year and can save 450 hours per year,This is in production and released on 6/16/2025 (RFC: CHG0330219),No,No,5 minutes per order saved for the business team to process it and expecting around 5400 order per year and can save 450 hours per year,,,,,
+000121,06/24/25,Enable Recording docs for viewing in ASAP system,"The Post Closing team receives orders to provide recording documents from lenders who have taken the lender's policy from FA. These orders can be either individual requests or bulk requests. Previously, the Post Closing team had to navigate multiple systems to fetch these recording documents. With this enhancement, they can now search for recording documents as a single request or in bulk within ASAP system.",Post Closing Team,The Post Closing team will efficiently manage an increased order volume without needing to expand the current team size.,Vinuthan Nagaraja,Nitin Reddy,330,"With numbers shared by Post closing members
+Lower side estimate of no. of Rec doc requests received per month: 300
+Approximate time taken for manual process: 7 min (avg)
+Time savings after using this solution per request: 5 mins 30 secs (avg)
+Manul effort to verify the results : 1  mins 30 sec (avg)
+Total savings : 28 hrs/Month based on current volume.
+Total Savings percieved: 330 hrs/Year.",No,No,No,"With numbers shared by Post closing members
+Lower side estimate of no. of Rec doc requests received per month: 300
+Approximate time taken for manual process: 7 min (avg)
+Time savings after using this solution per request: 5 mins 30 secs (avg)
+Manul effort to verify the results : 1  mins 30 sec (avg)
+Total savings : 28 hrs/Month based on current volume.
+Total Savings percieved: 330 hrs/Year.",,,,,
+000122,06/24/25,RPS Missing files in ASAP,"Whenever the Post Closing team encounters missing title documents from RPS, the Dev team needs to gather metadata related to the missing file and send an email to the RPS team for further investigation. During this time, business users have to wait for Dev intervention before the RPS Production team can investigate. This enhancement has automated the Dev intervention step.",ASAP Dev Team and Post Closing Team,"Dev Team can use the saved time to work on high business value enahcements. 
+",Vinuthan Nagaraja,Nitin Reddy,100,"Based on the historican data and post production numbers
+Number of RPS files where manual intervention was need: 30 per month (avg)
+Dev time needed to verify the error and extract details to send email to RPD production support: 15 mins (Avg)
+Business Wait time to start manual intervention 8to 16hr per request.
+Total Dev time saved as per actual calculations: 8 hrs/ Month
+Total Savings percieved: 100 hrs/Year.",No,No,No,"Based on the historican data and post production numbers
+Number of RPS files where manual intervention was need: 30 per month (avg)
+Dev time needed to verify the error and extract details to send email to RPD production support: 15 mins (Avg)
+Business Wait time to start manual intervention 8to 16hr per request.
+Total Dev time saved as per actual calculations: 8 hrs/ Month
+Total Savings percieved: 100 hrs/Year.",,,,,
+000123,06/24/25,Automation of application sanity,Configure the application sanity testing via automation to over come the manual testing for automation,UWB Team,.,Vinuthan Nagaraja,Shashidhara Aithal ,48,"Time taken per sanity without automation - 45 mins
+Time taken per sanity with automation - 20 mins
+Total time saved per sanity via automation - 25 mins
+Average 10 sanity per month saves  ~4Hrs/Month
+Total time saved per year 12*4Hrs ~ 48Hrs/Year",No,No,No,"Time taken per sanity without automation - 45 mins
+Time taken per sanity with automation - 20 mins
+Total time saved per sanity via automation - 25 mins
+Average 10 sanity per month saves  ~4Hrs/Month
+Total time saved per year 12*4Hrs ~ 48Hrs/Year",,,,,
+000124,06/24/25,Set up SQL Agent job to Monitor the email table,"Send notification to the technical team upon any delay in email delivery from UWB system. 
+This will avoid the regular manual check of emails",UWB Team,.,Vinuthan Nagaraja,Shashidhara Aithal ,12,"Average time taken daily to check the email tables manually - 2.5 mins. 
+Time saved by SQL job to monitor :  22 Working days* 2.5mins  ~1 Hr/month
+Total time saved per year - 12 months * 1Hr ~ 12Hr/Year",No,No,No,"Average time taken daily to check the email tables manually - 2.5 mins. 
+Time saved by SQL job to monitor :  22 Working days* 2.5mins  ~1 Hr/month
+Total time saved per year - 12 months * 1Hr ~ 12Hr/Year",,,,,
+000125,06/24/25,Fetch the FAST and AgentNet file status via Talend process,Reuse the Snwoflake and Talend process to fetch the source system files (AgentNet and FAST ) instead of direct dependecy from AgentNet and FAST,UWB Team,.,Vinuthan Nagaraja,Shashidhara Aithal ,65,"Directly fetching the required details from FAST ,AgnetNet API's and Middleware set up for TIBCO would have taken 95Hrs of effort. 
+With snowflake approach , it has taken 30Hrs to fetch the details. 
+Total save in implementation ~ 65Hrs",No,No,No,"Directly fetching the required details from FAST ,AgnetNet API's and Middleware set up for TIBCO would have taken 95Hrs of effort. 
+With snowflake approach , it has taken 30Hrs to fetch the details. 
+Total save in implementation ~ 65Hrs",,,,,
+000127,06/24/25,Restrict Test Order Property hits from FS,Restricting risky property hits arising from FS test orders from reaching Salesforce will reduce the wasted efforts by users to clear these hits.,SIU - Risky Property Data users,Users can utilize the saved time to work on other orders related to SIU and handle future volume with the same number of users.,Vinuthan Nagaraja,Placida and Kartik,80,"Based on the historical data and post production numbers
+Number test hits generated by Interface Partners in Prod: 400/month (avg)
+Time taken to verify hit in prod by user: 1 min/hit
+Total time saved for user team: 6.5 hrs/Month
+Total Savings percieved: 80 hsr/Year",No,No,No,"Based on the historical data and post production numbers
+Number test hits generated by Interface Partners in Prod: 400/month (avg)
+Time taken to verify hit in prod by user: 1 min/hit
+Total time saved for user team: 6.5 hrs/Month
+Total Savings percieved: 80 hsr/Year",,,,,
+000128,06/25/25,Jira migration for NPS applications,"Migration of Test cases, User stories from ADO to Jira for the NPS applications, FASTSearch, EWB and TEN",T3,Team can work on sprint acitivities without juggling between ADO and JIRA. Smooth migration from JIRA to ADO and team was able to start working on JIRA immeddiately,Vijay,Prasanna Rajanna,65,Migration effort with the help tool vs Manual effort,No,No,No,,,,,,
+000129,,,,,,,,,,,,,,,,,,
+000130,,,,,,,,,,,,,,,,,,
+000131,,,,,,,,,,,,,,,,,,
+000132,,,,,,,,,,,,,,,,,,
+000133,,,,,,,,,,,,,,,,,,
+000134,,,,,,,,,,,,,,,,,,
+000135,,,,,,,,,,,,,,,,,,
+000136,,,,,,,,,,,,,,,,,,
+000137,,,,,,,,,,,,,,,,,,
+000138,,,,,,,,,,,,,,,,,,
+000139,,,,,,,,,,,,,,,,,,
+000140,,,,,,,,,,,,,,,,,,
+000141,,,,,,,,,,,,,,,,,,
+000142,,,,,,,,,,,,,,,,,,
+000143,,,,,,,,,,,,,,,,,,
+000144,,,,,,,,,,,,,,,,,,
+000145,,,,,,,,,,,,,,,,,,
+000146,,,,,,,,,,,,,,,,,,
+000147,,,,,,,,,,,,,,,,,,
+000148,,,,,,,,,,,,,,,,,,
+000149,,,,,,,,,,,,,,,,,,
+000150,,,,,,,,,,,,,,,,,,
+000151,,,,,,,,,,,,,,,,,,
+000152,,,,,,,,,,,,,,,,,,
+000153,,,,,,,,,,,,,,,,,,
+000154,,,,,,,,,,,,,,,,,,
+000155,,,,,,,,,,,,,,,,,,
+000156,,,,,,,,,,,,,,,,,,
+000157,,,,,,,,,,,,,,,,,,
+000158,,,,,,,,,,,,,,,,,,
+000159,,,,,,,,,,,,,,,,,,
+000160,,,,,,,,,,,,,,,,,,
+000161,,,,,,,,,,,,,,,,,,
+000162,,,,,,,,,,,,,,,,,,
+000163,,,,,,,,,,,,,,,,,,
+000164,,,,,,,,,,,,,,,,,,
+000165,,,,,,,,,,,,,,,,,,
+000166,,,,,,,,,,,,,,,,,,
+000167,,,,,,,,,,,,,,,,,,
+000168,,,,,,,,,,,,,,,,,,
+000169,,,,,,,,,,,,,,,,,,
+000170,,,,,,,,,,,,,,,,,,
+000171,,,,,,,,,,,,,,,,,,
+000172,,,,,,,,,,,,,,,,,,
+000173,,,,,,,,,,,,,,,,,,
+000174,,,,,,,,,,,,,,,,,,
+000175,,,,,,,,,,,,,,,,,,
+000176,,,,,,,,,,,,,,,,,,
+000177,,,,,,,,,,,,,,,,,,
+000178,,,,,,,,,,,,,,,,,,
+000179,,,,,,,,,,,,,,,,,,
+000180,,,,,,,,,,,,,,,,,,
+000181,,,,,,,,,,,,,,,,,,
+000182,,,,,,,,,,,,,,,,,,
+000183,,,,,,,,,,,,,,,,,,
+000184,,,,,,,,,,,,,,,,,,
+000185,,,,,,,,,,,,,,,,,,
+000186,,,,,,,,,,,,,,,,,,
+000187,,,,,,,,,,,,,,,,,,
+000188,,,,,,,,,,,,,,,,,,
+000189,,,,,,,,,,,,,,,,,,
+000190,,,,,,,,,,,,,,,,,,
+000191,,,,,,,,,,,,,,,,,,
+000192,,,,,,,,,,,,,,,,,,
+000193,,,,,,,,,,,,,,,,,,
+000194,,,,,,,,,,,,,,,,,,
+000195,,,,,,,,,,,,,,,,,,
+000196,,,,,,,,,,,,,,,,,,
+000197,,,,,,,,,,,,,,,,,,
+000198,,,,,,,,,,,,,,,,,,
+000199,,,,,,,,,,,,,,,,,,
+000200,,,,,,,,,,,,,,,,,,
+000201,,,,,,,,,,,,,,,,,,
+000202,,,,,,,,,,,,,,,,,,
+000203,,,,,,,,,,,,,,,,,,
+000204,,,,,,,,,,,,,,,,,,
+000205,,,,,,,,,,,,,,,,,,
+000206,,,,,,,,,,,,,,,,,,
+000207,,,,,,,,,,,,,,,,,,
+000208,,,,,,,,,,,,,,,,,,
+000209,,,,,,,,,,,,,,,,,,
+000210,,,,,,,,,,,,,,,,,,
+000211,,,,,,,,,,,,,,,,,,
+000212,,,,,,,,,,,,,,,,,,
+000213,,,,,,,,,,,,,,,,,,
+000214,,,,,,,,,,,,,,,,,,
+000215,,,,,,,,,,,,,,,,,,
+000216,,,,,,,,,,,,,,,,,,
+000217,,,,,,,,,,,,,,,,,,
+000218,,,,,,,,,,,,,,,,,,
+000219,,,,,,,,,,,,,,,,,,
+000220,,,,,,,,,,,,,,,,,,
+000221,,,,,,,,,,,,,,,,,,
+000222,,,,,,,,,,,,,,,,,,
+000223,,,,,,,,,,,,,,,,,,
+000224,,,,,,,,,,,,,,,,,,
+000225,,,,,,,,,,,,,,,,,,
+000226,,,,,,,,,,,,,,,,,,
+000227,,,,,,,,,,,,,,,,,,
+000228,,,,,,,,,,,,,,,,,,
+000229,,,,,,,,,,,,,,,,,,
+000230,,,,,,,,,,,,,,,,,,
+000231,,,,,,,,,,,,,,,,,,
+000232,,,,,,,,,,,,,,,,,,
+000233,,,,,,,,,,,,,,,,,,
+000234,,,,,,,,,,,,,,,,,,
+000235,,,,,,,,,,,,,,,,,,
+000236,,,,,,,,,,,,,,,,,,
+000237,,,,,,,,,,,,,,,,,,
+000238,,,,,,,,,,,,,,,,,,
+000239,,,,,,,,,,,,,,,,,,
+000240,,,,,,,,,,,,,,,,,,
+000241,,,,,,,,,,,,,,,,,,
+000242,,,,,,,,,,,,,,,,,,
+000243,,,,,,,,,,,,,,,,,,
+000244,,,,,,,,,,,,,,,,,,
+000245,,,,,,,,,,,,,,,,,,
+000246,,,,,,,,,,,,,,,,,,
+000247,,,,,,,,,,,,,,,,,,
+000248,,,,,,,,,,,,,,,,,,
+000249,,,,,,,,,,,,,,,,,,
+000250,,,,,,,,,,,,,,,,,,
+000251,,,,,,,,,,,,,,,,,,
+000252,,,,,,,,,,,,,,,,,,
+000253,,,,,,,,,,,,,,,,,,
+000254,,,,,,,,,,,,,,,,,,
+000255,,,,,,,,,,,,,,,,,,
+000256,,,,,,,,,,,,,,,,,,
+000257,,,,,,,,,,,,,,,,,,
+000258,,,,,,,,,,,,,,,,,,
+000259,,,,,,,,,,,,,,,,,,
+000260,,,,,,,,,,,,,,,,,,
+000261,,,,,,,,,,,,,,,,,,
+000262,,,,,,,,,,,,,,,,,,
+000263,,,,,,,,,,,,,,,,,,
+000264,,,,,,,,,,,,,,,,,,
+000265,,,,,,,,,,,,,,,,,,
+000266,,,,,,,,,,,,,,,,,,
+000267,,,,,,,,,,,,,,,,,,
+000268,,,,,,,,,,,,,,,,,,
+000269,,,,,,,,,,,,,,,,,,
+000270,,,,,,,,,,,,,,,,,,
+000271,,,,,,,,,,,,,,,,,,
+000272,,,,,,,,,,,,,,,,,,
+000273,,,,,,,,,,,,,,,,,,
+000274,,,,,,,,,,,,,,,,,,
+000275,,,,,,,,,,,,,,,,,,
+000276,,,,,,,,,,,,,,,,,,
+000277,,,,,,,,,,,,,,,,,,
+000278,,,,,,,,,,,,,,,,,,
+000279,,,,,,,,,,,,,,,,,,
+000280,,,,,,,,,,,,,,,,,,
+000281,,,,,,,,,,,,,,,,,,
+000282,,,,,,,,,,,,,,,,,,
+000283,,,,,,,,,,,,,,,,,,
+000284,,,,,,,,,,,,,,,,,,
+000285,,,,,,,,,,,,,,,,,,
+000286,,,,,,,,,,,,,,,,,,
+000287,,,,,,,,,,,,,,,,,,
+000288,,,,,,,,,,,,,,,,,,
+000289,,,,,,,,,,,,,,,,,,
+000290,,,,,,,,,,,,,,,,,,
+000291,,,,,,,,,,,,,,,,,,
+000292,,,,,,,,,,,,,,,,,,
+000293,,,,,,,,,,,,,,,,,,
+000294,,,,,,,,,,,,,,,,,,
+000295,,,,,,,,,,,,,,,,,,
+000296,,,,,,,,,,,,,,,,,,
+000297,,,,,,,,,,,,,,,,,,
+000298,,,,,,,,,,,,,,,,,,
+000299,,,,,,,,,,,,,,,,,,
+000300,,,,,,,,,,,,,,,,,,
+000301,,,,,,,,,,,,,,,,,,
+000302,,,,,,,,,,,,,,,,,,
+000303,,,,,,,,,,,,,,,,,,
+000304,,,,,,,,,,,,,,,,,,
+000305,,,,,,,,,,,,,,,,,,
+000306,,,,,,,,,,,,,,,,,,
+000307,,,,,,,,,,,,,,,,,,
+000308,,,,,,,,,,,,,,,,,,
+000309,,,,,,,,,,,,,,,,,,
+000310,,,,,,,,,,,,,,,,,,
+000311,,,,,,,,,,,,,,,,,,
+000312,,,,,,,,,,,,,,,,,,
+000313,,,,,,,,,,,,,,,,,,
+000314,,,,,,,,,,,,,,,,,,
+000315,,,,,,,,,,,,,,,,,,
+000316,,,,,,,,,,,,,,,,,,
+000317,,,,,,,,,,,,,,,,,,
+000318,,,,,,,,,,,,,,,,,,
+000319,,,,,,,,,,,,,,,,,,
+000320,,,,,,,,,,,,,,,,,,
+000321,,,,,,,,,,,,,,,,,,
+000322,,,,,,,,,,,,,,,,,,
+000323,,,,,,,,,,,,,,,,,,
+000324,,,,,,,,,,,,,,,,,,
+000325,,,,,,,,,,,,,,,,,,
+000326,,,,,,,,,,,,,,,,,,
+000327,,,,,,,,,,,,,,,,,,
+000328,,,,,,,,,,,,,,,,,,
+000329,,,,,,,,,,,,,,,,,,
+000330,,,,,,,,,,,,,,,,,,
+000331,,,,,,,,,,,,,,,,,,
+000332,,,,,,,,,,,,,,,,,,
+000333,,,,,,,,,,,,,,,,,,
+000334,,,,,,,,,,,,,,,,,,
+000335,,,,,,,,,,,,,,,,,,
+000336,,,,,,,,,,,,,,,,,,
+000337,,,,,,,,,,,,,,,,,,
+000338,,,,,,,,,,,,,,,,,,
+000339,,,,,,,,,,,,,,,,,,
+000340,,,,,,,,,,,,,,,,,,
+000341,,,,,,,,,,,,,,,,,,
+000342,,,,,,,,,,,,,,,,,,
+000343,,,,,,,,,,,,,,,,,,
+000344,,,,,,,,,,,,,,,,,,
+000345,,,,,,,,,,,,,,,,,,
+000346,,,,,,,,,,,,,,,,,,
+000347,,,,,,,,,,,,,,,,,,
+000348,,,,,,,,,,,,,,,,,,
+000349,,,,,,,,,,,,,,,,,,
+000350,,,,,,,,,,,,,,,,,,
+000351,,,,,,,,,,,,,,,,,,
+000352,,,,,,,,,,,,,,,,,,
+000353,,,,,,,,,,,,,,,,,,
+000354,,,,,,,,,,,,,,,,,,
+000355,,,,,,,,,,,,,,,,,,
+000356,,,,,,,,,,,,,,,,,,
+000357,,,,,,,,,,,,,,,,,,
+000358,,,,,,,,,,,,,,,,,,
+000359,,,,,,,,,,,,,,,,,,
+000360,,,,,,,,,,,,,,,,,,
+000361,,,,,,,,,,,,,,,,,,
+000362,,,,,,,,,,,,,,,,,,
+000363,,,,,,,,,,,,,,,,,,
+000364,,,,,,,,,,,,,,,,,,
+000365,,,,,,,,,,,,,,,,,,
+000366,,,,,,,,,,,,,,,,,,
+000367,,,,,,,,,,,,,,,,,,
+000368,,,,,,,,,,,,,,,,,,
+000369,,,,,,,,,,,,,,,,,,
+000370,,,,,,,,,,,,,,,,,,
+000371,,,,,,,,,,,,,,,,,,
+000372,,,,,,,,,,,,,,,,,,
+000373,,,,,,,,,,,,,,,,,,
+000374,,,,,,,,,,,,,,,,,,
+000375,,,,,,,,,,,,,,,,,,
+000376,,,,,,,,,,,,,,,,,,
+000377,,,,,,,,,,,,,,,,,,
+000378,,,,,,,,,,,,,,,,,,
+000379,,,,,,,,,,,,,,,,,,
+000380,,,,,,,,,,,,,,,,,,
+000381,,,,,,,,,,,,,,,,,,
+000382,,,,,,,,,,,,,,,,,,
+000383,,,,,,,,,,,,,,,,,,
+000384,,,,,,,,,,,,,,,,,,
+000385,,,,,,,,,,,,,,,,,,
+000386,,,,,,,,,,,,,,,,,,
+000387,,,,,,,,,,,,,,,,,,
+000388,,,,,,,,,,,,,,,,,,
+000389,,,,,,,,,,,,,,,,,,
+000390,,,,,,,,,,,,,,,,,,
+000391,,,,,,,,,,,,,,,,,,
+000392,,,,,,,,,,,,,,,,,,
+000393,,,,,,,,,,,,,,,,,,
+000394,,,,,,,,,,,,,,,,,,
+000395,,,,,,,,,,,,,,,,,,
+000396,,,,,,,,,,,,,,,,,,
+000397,,,,,,,,,,,,,,,,,,
+000398,,,,,,,,,,,,,,,,,,
+000399,,,,,,,,,,,,,,,,,,
+000400,,,,,,,,,,,,,,,,,,
+000401,,,,,,,,,,,,,,,,,,
+000402,,,,,,,,,,,,,,,,,,
+000403,,,,,,,,,,,,,,,,,,
+000404,,,,,,,,,,,,,,,,,,
+000405,,,,,,,,,,,,,,,,,,
+000406,,,,,,,,,,,,,,,,,,
+000407,,,,,,,,,,,,,,,,,,
+000408,,,,,,,,,,,,,,,,,,
+000409,,,,,,,,,,,,,,,,,,
+000410,,,,,,,,,,,,,,,,,,
+000411,,,,,,,,,,,,,,,,,,
+000412,,,,,,,,,,,,,,,,,,
+000413,,,,,,,,,,,,,,,,,,
+000414,,,,,,,,,,,,,,,,,,
+000415,,,,,,,,,,,,,,,,,,
+000416,,,,,,,,,,,,,,,,,,
+000417,,,,,,,,,,,,,,,,,,
+000418,,,,,,,,,,,,,,,,,,
+000419,,,,,,,,,,,,,,,,,,
+000420,,,,,,,,,,,,,,,,,,
+000421,,,,,,,,,,,,,,,,,,
+000422,,,,,,,,,,,,,,,,,,
+000423,,,,,,,,,,,,,,,,,,
+000424,,,,,,,,,,,,,,,,,,
+000425,,,,,,,,,,,,,,,,,,
+000426,,,,,,,,,,,,,,,,,,
+000427,,,,,,,,,,,,,,,,,,
+000428,,,,,,,,,,,,,,,,,,
+000429,,,,,,,,,,,,,,,,,,
+000430,,,,,,,,,,,,,,,,,,
+000431,,,,,,,,,,,,,,,,,,
+000432,,,,,,,,,,,,,,,,,,
+000433,,,,,,,,,,,,,,,,,,
+000434,,,,,,,,,,,,,,,,,,
+000435,,,,,,,,,,,,,,,,,,
+000436,,,,,,,,,,,,,,,,,,
+000437,,,,,,,,,,,,,,,,,,
+000438,,,,,,,,,,,,,,,,,,
+000439,,,,,,,,,,,,,,,,,,
+000440,,,,,,,,,,,,,,,,,,
+000441,,,,,,,,,,,,,,,,,,
+000442,,,,,,,,,,,,,,,,,,
+000443,,,,,,,,,,,,,,,,,,
+000444,,,,,,,,,,,,,,,,,,
+000445,,,,,,,,,,,,,,,,,,
+000446,,,,,,,,,,,,,,,,,,
+000447,,,,,,,,,,,,,,,,,,
+000448,,,,,,,,,,,,,,,,,,
+000449,,,,,,,,,,,,,,,,,,
+000450,,,,,,,,,,,,,,,,,,
+000451,,,,,,,,,,,,,,,,,,
+000452,,,,,,,,,,,,,,,,,,
+000453,,,,,,,,,,,,,,,,,,
+000454,,,,,,,,,,,,,,,,,,
+000455,,,,,,,,,,,,,,,,,,
+000456,,,,,,,,,,,,,,,,,,
+000457,,,,,,,,,,,,,,,,,,
+000458,,,,,,,,,,,,,,,,,,
+000459,,,,,,,,,,,,,,,,,,
+000460,,,,,,,,,,,,,,,,,,
+000461,,,,,,,,,,,,,,,,,,
+000462,,,,,,,,,,,,,,,,,,
+000463,,,,,,,,,,,,,,,,,,
+000464,,,,,,,,,,,,,,,,,,
+000465,,,,,,,,,,,,,,,,,,
+000466,,,,,,,,,,,,,,,,,,
+000467,,,,,,,,,,,,,,,,,,
+000468,,,,,,,,,,,,,,,,,,
+000469,,,,,,,,,,,,,,,,,,
+000470,,,,,,,,,,,,,,,,,,
+000471,,,,,,,,,,,,,,,,,,
+000472,,,,,,,,,,,,,,,,,,
+000473,,,,,,,,,,,,,,,,,,
+000474,,,,,,,,,,,,,,,,,,
+000475,,,,,,,,,,,,,,,,,,
+000476,,,,,,,,,,,,,,,,,,
+000477,,,,,,,,,,,,,,,,,,
+000478,,,,,,,,,,,,,,,,,,
+000479,,,,,,,,,,,,,,,,,,
+000480,,,,,,,,,,,,,,,,,,
+000481,,,,,,,,,,,,,,,,,,
+000482,,,,,,,,,,,,,,,,,,
+000483,,,,,,,,,,,,,,,,,,
+000484,,,,,,,,,,,,,,,,,,
+000485,,,,,,,,,,,,,,,,,,
+000486,,,,,,,,,,,,,,,,,,
+000487,,,,,,,,,,,,,,,,,,
+000488,,,,,,,,,,,,,,,,,,
+000489,,,,,,,,,,,,,,,,,,
+000490,,,,,,,,,,,,,,,,,,
+000491,,,,,,,,,,,,,,,,,,
+000492,,,,,,,,,,,,,,,,,,
+000493,,,,,,,,,,,,,,,,,,
+000494,,,,,,,,,,,,,,,,,,
+000495,,,,,,,,,,,,,,,,,,
+000496,,,,,,,,,,,,,,,,,,
+000497,,,,,,,,,,,,,,,,,,
+000498,,,,,,,,,,,,,,,,,,
+000499,,,,,,,,,,,,,,,,,,
+000500,,,,,,,,,,,,,,,,,,
+000501,,,,,,,,,,,,,,,,,,
+000502,,,,,,,,,,,,,,,,,,
+000503,,,,,,,,,,,,,,,,,,
+000504,,,,,,,,,,,,,,,,,,
+000505,,,,,,,,,,,,,,,,,,
+000506,,,,,,,,,,,,,,,,,,
+000507,,,,,,,,,,,,,,,,,,
+000508,,,,,,,,,,,,,,,,,,
+000509,,,,,,,,,,,,,,,,,,
+000510,,,,,,,,,,,,,,,,,,
+000511,,,,,,,,,,,,,,,,,,
+000512,,,,,,,,,,,,,,,,,,
+000513,,,,,,,,,,,,,,,,,,
+000514,,,,,,,,,,,,,,,,,,
+000515,,,,,,,,,,,,,,,,,,
+000516,,,,,,,,,,,,,,,,,,
+000517,,,,,,,,,,,,,,,,,,
+000518,,,,,,,,,,,,,,,,,,
+000519,,,,,,,,,,,,,,,,,,
+000520,,,,,,,,,,,,,,,,,,
+000521,,,,,,,,,,,,,,,,,,
+000522,,,,,,,,,,,,,,,,,,
+000523,,,,,,,,,,,,,,,,,,
+000524,,,,,,,,,,,,,,,,,,
+000525,,,,,,,,,,,,,,,,,,
+000526,,,,,,,,,,,,,,,,,,
+000527,,,,,,,,,,,,,,,,,,
+000528,,,,,,,,,,,,,,,,,,
+000529,,,,,,,,,,,,,,,,,,
+000530,,,,,,,,,,,,,,,,,,
+000531,,,,,,,,,,,,,,,,,,
+000532,,,,,,,,,,,,,,,,,,
+000533,,,,,,,,,,,,,,,,,,
+000534,,,,,,,,,,,,,,,,,,
+000535,,,,,,,,,,,,,,,,,,
+000536,,,,,,,,,,,,,,,,,,
+000537,,,,,,,,,,,,,,,,,,
+000538,,,,,,,,,,,,,,,,,,
+000539,,,,,,,,,,,,,,,,,,
+000540,,,,,,,,,,,,,,,,,,
+000541,,,,,,,,,,,,,,,,,,
+000542,,,,,,,,,,,,,,,,,,
+000543,,,,,,,,,,,,,,,,,,
+000544,,,,,,,,,,,,,,,,,,
+000545,,,,,,,,,,,,,,,,,,
+000546,,,,,,,,,,,,,,,,,,
+000547,,,,,,,,,,,,,,,,,,
+000548,,,,,,,,,,,,,,,,,,
+000549,,,,,,,,,,,,,,,,,,
+000550,,,,,,,,,,,,,,,,,,
+000551,,,,,,,,,,,,,,,,,,
+000552,,,,,,,,,,,,,,,,,,
+000553,,,,,,,,,,,,,,,,,,
+000554,,,,,,,,,,,,,,,,,,
+000555,,,,,,,,,,,,,,,,,,
+000556,,,,,,,,,,,,,,,,,,
+000557,,,,,,,,,,,,,,,,,,
+000558,,,,,,,,,,,,,,,,,,
+000559,,,,,,,,,,,,,,,,,,
+000560,,,,,,,,,,,,,,,,,,
+000561,,,,,,,,,,,,,,,,,,
+000562,,,,,,,,,,,,,,,,,,
+000563,,,,,,,,,,,,,,,,,,
+000564,,,,,,,,,,,,,,,,,,
+000565,,,,,,,,,,,,,,,,,,
+000566,,,,,,,,,,,,,,,,,,
+000567,,,,,,,,,,,,,,,,,,
+000568,,,,,,,,,,,,,,,,,,
+000569,,,,,,,,,,,,,,,,,,
+000570,,,,,,,,,,,,,,,,,,
+000571,,,,,,,,,,,,,,,,,,
+000572,,,,,,,,,,,,,,,,,,
+000573,,,,,,,,,,,,,,,,,,
+000574,,,,,,,,,,,,,,,,,,
+000575,,,,,,,,,,,,,,,,,,
+000576,,,,,,,,,,,,,,,,,,
+000577,,,,,,,,,,,,,,,,,,
+000578,,,,,,,,,,,,,,,,,,
+000579,,,,,,,,,,,,,,,,,,
+000580,,,,,,,,,,,,,,,,,,
+000581,,,,,,,,,,,,,,,,,,
+000582,,,,,,,,,,,,,,,,,,
+000583,,,,,,,,,,,,,,,,,,
+000584,,,,,,,,,,,,,,,,,,
+000585,,,,,,,,,,,,,,,,,,
+000586,,,,,,,,,,,,,,,,,,
+000587,,,,,,,,,,,,,,,,,,
+000588,,,,,,,,,,,,,,,,,,
+000589,,,,,,,,,,,,,,,,,,
+000590,,,,,,,,,,,,,,,,,,
+000591,,,,,,,,,,,,,,,,,,
+000592,,,,,,,,,,,,,,,,,,
+000593,,,,,,,,,,,,,,,,,,
+000594,,,,,,,,,,,,,,,,,,
+000595,,,,,,,,,,,,,,,,,,
+000596,,,,,,,,,,,,,,,,,,
+000597,,,,,,,,,,,,,,,,,,
+000598,,,,,,,,,,,,,,,,,,
+000599,,,,,,,,,,,,,,,,,,
+000600,,,,,,,,,,,,,,,,,,
+000601,,,,,,,,,,,,,,,,,,
+000602,,,,,,,,,,,,,,,,,,
+000603,,,,,,,,,,,,,,,,,,
+000604,,,,,,,,,,,,,,,,,,
+000605,,,,,,,,,,,,,,,,,,
+000606,,,,,,,,,,,,,,,,,,
+000607,,,,,,,,,,,,,,,,,,
+000608,,,,,,,,,,,,,,,,,,
+000609,,,,,,,,,,,,,,,,,,
+000610,,,,,,,,,,,,,,,,,,
+000611,,,,,,,,,,,,,,,,,,
+000612,,,,,,,,,,,,,,,,,,
+000613,,,,,,,,,,,,,,,,,,
+000614,,,,,,,,,,,,,,,,,,
+000615,,,,,,,,,,,,,,,,,,
+000616,,,,,,,,,,,,,,,,,,
+000617,,,,,,,,,,,,,,,,,,
+000618,,,,,,,,,,,,,,,,,,
+000619,,,,,,,,,,,,,,,,,,
+000620,,,,,,,,,,,,,,,,,,
+000621,,,,,,,,,,,,,,,,,,
+000622,,,,,,,,,,,,,,,,,,
+000623,,,,,,,,,,,,,,,,,,
+000624,,,,,,,,,,,,,,,,,,
+000625,,,,,,,,,,,,,,,,,,
+000626,,,,,,,,,,,,,,,,,,
+000627,,,,,,,,,,,,,,,,,,
+000628,,,,,,,,,,,,,,,,,,
+000629,,,,,,,,,,,,,,,,,,
+000630,,,,,,,,,,,,,,,,,,
+000631,,,,,,,,,,,,,,,,,,
+000632,,,,,,,,,,,,,,,,,,
+000633,,,,,,,,,,,,,,,,,,
+000634,,,,,,,,,,,,,,,,,,
+000635,,,,,,,,,,,,,,,,,,
+000636,,,,,,,,,,,,,,,,,,
+000637,,,,,,,,,,,,,,,,,,
+000638,,,,,,,,,,,,,,,,,,
+000639,,,,,,,,,,,,,,,,,,
+000640,,,,,,,,,,,,,,,,,,
+000641,,,,,,,,,,,,,,,,,,
+000642,,,,,,,,,,,,,,,,,,
+000643,,,,,,,,,,,,,,,,,,
+000644,,,,,,,,,,,,,,,,,,
+000645,,,,,,,,,,,,,,,,,,
+000646,,,,,,,,,,,,,,,,,,
+000647,,,,,,,,,,,,,,,,,,
+000648,,,,,,,,,,,,,,,,,,
+000649,,,,,,,,,,,,,,,,,,
+000650,,,,,,,,,,,,,,,,,,
+000651,,,,,,,,,,,,,,,,,,
+000652,,,,,,,,,,,,,,,,,,
+000653,,,,,,,,,,,,,,,,,,
+000654,,,,,,,,,,,,,,,,,,
+000655,,,,,,,,,,,,,,,,,,
+000656,,,,,,,,,,,,,,,,,,
+000657,,,,,,,,,,,,,,,,,,
+000658,,,,,,,,,,,,,,,,,,
+000659,,,,,,,,,,,,,,,,,,
+000660,,,,,,,,,,,,,,,,,,
+000661,,,,,,,,,,,,,,,,,,
+000662,,,,,,,,,,,,,,,,,,
+000663,,,,,,,,,,,,,,,,,,
+000664,,,,,,,,,,,,,,,,,,
+000665,,,,,,,,,,,,,,,,,,
+000666,,,,,,,,,,,,,,,,,,
+000667,,,,,,,,,,,,,,,,,,
+000668,,,,,,,,,,,,,,,,,,
+000669,,,,,,,,,,,,,,,,,,
+000670,,,,,,,,,,,,,,,,,,
+000671,,,,,,,,,,,,,,,,,,
+000672,,,,,,,,,,,,,,,,,,
+000673,,,,,,,,,,,,,,,,,,
+000674,,,,,,,,,,,,,,,,,,
+000675,,,,,,,,,,,,,,,,,,
+000676,,,,,,,,,,,,,,,,,,
+000677,,,,,,,,,,,,,,,,,,
+000678,,,,,,,,,,,,,,,,,,
+000679,,,,,,,,,,,,,,,,,,
+000680,,,,,,,,,,,,,,,,,,
+000681,,,,,,,,,,,,,,,,,,
+000682,,,,,,,,,,,,,,,,,,
+000683,,,,,,,,,,,,,,,,,,
+000684,,,,,,,,,,,,,,,,,,
+000685,,,,,,,,,,,,,,,,,,
+000686,,,,,,,,,,,,,,,,,,
+000687,,,,,,,,,,,,,,,,,,
+000688,,,,,,,,,,,,,,,,,,
+000689,,,,,,,,,,,,,,,,,,
+000690,,,,,,,,,,,,,,,,,,
+000691,,,,,,,,,,,,,,,,,,
+000692,,,,,,,,,,,,,,,,,,
+000693,,,,,,,,,,,,,,,,,,
+000694,,,,,,,,,,,,,,,,,,
+000695,,,,,,,,,,,,,,,,,,
+000696,,,,,,,,,,,,,,,,,,
+000697,,,,,,,,,,,,,,,,,,
+000698,,,,,,,,,,,,,,,,,,
+000699,,,,,,,,,,,,,,,,,,
+000700,,,,,,,,,,,,,,,,,,
+000701,,,,,,,,,,,,,,,,,,
+000702,,,,,,,,,,,,,,,,,,
+000703,,,,,,,,,,,,,,,,,,
+000704,,,,,,,,,,,,,,,,,,
+000705,,,,,,,,,,,,,,,,,,
+000706,,,,,,,,,,,,,,,,,,
+000707,,,,,,,,,,,,,,,,,,
+000708,,,,,,,,,,,,,,,,,,
+000709,,,,,,,,,,,,,,,,,,
+000710,,,,,,,,,,,,,,,,,,
+000711,,,,,,,,,,,,,,,,,,
+000712,,,,,,,,,,,,,,,,,,
+000713,,,,,,,,,,,,,,,,,,
+000714,,,,,,,,,,,,,,,,,,
+000715,,,,,,,,,,,,,,,,,,
+000716,,,,,,,,,,,,,,,,,,
+000717,,,,,,,,,,,,,,,,,,
+000718,,,,,,,,,,,,,,,,,,
+000719,,,,,,,,,,,,,,,,,,
+000720,,,,,,,,,,,,,,,,,,
+000721,,,,,,,,,,,,,,,,,,
+000722,,,,,,,,,,,,,,,,,,
+000723,,,,,,,,,,,,,,,,,,
+000724,,,,,,,,,,,,,,,,,,
+000725,,,,,,,,,,,,,,,,,,
+000726,,,,,,,,,,,,,,,,,,
+000727,,,,,,,,,,,,,,,,,,
+000728,,,,,,,,,,,,,,,,,,
+000729,,,,,,,,,,,,,,,,,,
+000730,,,,,,,,,,,,,,,,,,
+000731,,,,,,,,,,,,,,,,,,
+000732,,,,,,,,,,,,,,,,,,
+000733,,,,,,,,,,,,,,,,,,
+000734,,,,,,,,,,,,,,,,,,
+000735,,,,,,,,,,,,,,,,,,
+000736,,,,,,,,,,,,,,,,,,
+000737,,,,,,,,,,,,,,,,,,
+000738,,,,,,,,,,,,,,,,,,
+000739,,,,,,,,,,,,,,,,,,
+000740,,,,,,,,,,,,,,,,,,
+000741,,,,,,,,,,,,,,,,,,
+000742,,,,,,,,,,,,,,,,,,
+000743,,,,,,,,,,,,,,,,,,
+000744,,,,,,,,,,,,,,,,,,
+000745,,,,,,,,,,,,,,,,,,
+000746,,,,,,,,,,,,,,,,,,
+000747,,,,,,,,,,,,,,,,,,
+000748,,,,,,,,,,,,,,,,,,
+000749,,,,,,,,,,,,,,,,,,
+000750,,,,,,,,,,,,,,,,,,
+000751,,,,,,,,,,,,,,,,,,
+000752,,,,,,,,,,,,,,,,,,
+000753,,,,,,,,,,,,,,,,,,
+000754,,,,,,,,,,,,,,,,,,
+000755,,,,,,,,,,,,,,,,,,
+000756,,,,,,,,,,,,,,,,,,
+000757,,,,,,,,,,,,,,,,,,
+000758,,,,,,,,,,,,,,,,,,
+000759,,,,,,,,,,,,,,,,,,
+000760,,,,,,,,,,,,,,,,,,
+000761,,,,,,,,,,,,,,,,,,
+000762,,,,,,,,,,,,,,,,,,
+000763,,,,,,,,,,,,,,,,,,
+000764,,,,,,,,,,,,,,,,,,
+000765,,,,,,,,,,,,,,,,,,
+000766,,,,,,,,,,,,,,,,,,
+000767,,,,,,,,,,,,,,,,,,
+000768,,,,,,,,,,,,,,,,,,
+000769,,,,,,,,,,,,,,,,,,
+000770,,,,,,,,,,,,,,,,,,
+000771,,,,,,,,,,,,,,,,,,
+000772,,,,,,,,,,,,,,,,,,
+000773,,,,,,,,,,,,,,,,,,
+000774,,,,,,,,,,,,,,,,,,
+000775,,,,,,,,,,,,,,,,,,
+000776,,,,,,,,,,,,,,,,,,
+000777,,,,,,,,,,,,,,,,,,
+000778,,,,,,,,,,,,,,,,,,
+000779,,,,,,,,,,,,,,,,,,
+000780,,,,,,,,,,,,,,,,,,
+000781,,,,,,,,,,,,,,,,,,
+000782,,,,,,,,,,,,,,,,,,
+000783,,,,,,,,,,,,,,,,,,
+000784,,,,,,,,,,,,,,,,,,
+000785,,,,,,,,,,,,,,,,,,
+000786,,,,,,,,,,,,,,,,,,
+000787,,,,,,,,,,,,,,,,,,
+000788,,,,,,,,,,,,,,,,,,
+000789,,,,,,,,,,,,,,,,,,
+000790,,,,,,,,,,,,,,,,,,
+000791,,,,,,,,,,,,,,,,,,
+000792,,,,,,,,,,,,,,,,,,
+000793,,,,,,,,,,,,,,,,,,
+000794,,,,,,,,,,,,,,,,,,
+000795,,,,,,,,,,,,,,,,,,
+000796,,,,,,,,,,,,,,,,,,
+000797,,,,,,,,,,,,,,,,,,
+000798,,,,,,,,,,,,,,,,,,
+000799,,,,,,,,,,,,,,,,,,
+000800,,,,,,,,,,,,,,,,,,
+000801,,,,,,,,,,,,,,,,,,
+000802,,,,,,,,,,,,,,,,,,
+000803,,,,,,,,,,,,,,,,,,
+000804,,,,,,,,,,,,,,,,,,
+000805,,,,,,,,,,,,,,,,,,
+000806,,,,,,,,,,,,,,,,,,
+000807,,,,,,,,,,,,,,,,,,
+000808,,,,,,,,,,,,,,,,,,
+000809,,,,,,,,,,,,,,,,,,
+000810,,,,,,,,,,,,,,,,,,
+000811,,,,,,,,,,,,,,,,,,
+000812,,,,,,,,,,,,,,,,,,
+000813,,,,,,,,,,,,,,,,,,
+000814,,,,,,,,,,,,,,,,,,
+000815,,,,,,,,,,,,,,,,,,
+000816,,,,,,,,,,,,,,,,,,
+000817,,,,,,,,,,,,,,,,,,
+000818,,,,,,,,,,,,,,,,,,
+000819,,,,,,,,,,,,,,,,,,
+000820,,,,,,,,,,,,,,,,,,
+000821,,,,,,,,,,,,,,,,,,
+000822,,,,,,,,,,,,,,,,,,
+000823,,,,,,,,,,,,,,,,,,
+000824,,,,,,,,,,,,,,,,,,
+000825,,,,,,,,,,,,,,,,,,
+000826,,,,,,,,,,,,,,,,,,
+000827,,,,,,,,,,,,,,,,,,
+000828,,,,,,,,,,,,,,,,,,
+000829,,,,,,,,,,,,,,,,,,
+000830,,,,,,,,,,,,,,,,,,
+000831,,,,,,,,,,,,,,,,,,
+000832,,,,,,,,,,,,,,,,,,
+000833,,,,,,,,,,,,,,,,,,
+000834,,,,,,,,,,,,,,,,,,
+000835,,,,,,,,,,,,,,,,,,
+000836,,,,,,,,,,,,,,,,,,
+000837,,,,,,,,,,,,,,,,,,
+000838,,,,,,,,,,,,,,,,,,
+000839,,,,,,,,,,,,,,,,,,
+000840,,,,,,,,,,,,,,,,,,
+000841,,,,,,,,,,,,,,,,,,
+000842,,,,,,,,,,,,,,,,,,
+000843,,,,,,,,,,,,,,,,,,
+000844,,,,,,,,,,,,,,,,,,
+000845,,,,,,,,,,,,,,,,,,
+000846,,,,,,,,,,,,,,,,,,
+000847,,,,,,,,,,,,,,,,,,
+000848,,,,,,,,,,,,,,,,,,
+000849,,,,,,,,,,,,,,,,,,
+000850,,,,,,,,,,,,,,,,,,
+000851,,,,,,,,,,,,,,,,,,
+000852,,,,,,,,,,,,,,,,,,
+000853,,,,,,,,,,,,,,,,,,
+000854,,,,,,,,,,,,,,,,,,
+000855,,,,,,,,,,,,,,,,,,
+000856,,,,,,,,,,,,,,,,,,
+000857,,,,,,,,,,,,,,,,,,
+000858,,,,,,,,,,,,,,,,,,
+000859,,,,,,,,,,,,,,,,,,
+000860,,,,,,,,,,,,,,,,,,
+000861,,,,,,,,,,,,,,,,,,
+000862,,,,,,,,,,,,,,,,,,
+000863,,,,,,,,,,,,,,,,,,
+000864,,,,,,,,,,,,,,,,,,
+000865,,,,,,,,,,,,,,,,,,
+000866,,,,,,,,,,,,,,,,,,
+000867,,,,,,,,,,,,,,,,,,
+000868,,,,,,,,,,,,,,,,,,
+000869,,,,,,,,,,,,,,,,,,
+000870,,,,,,,,,,,,,,,,,,
+000871,,,,,,,,,,,,,,,,,,
+000872,,,,,,,,,,,,,,,,,,
+000873,,,,,,,,,,,,,,,,,,
+000874,,,,,,,,,,,,,,,,,,
+000875,,,,,,,,,,,,,,,,,,
+000876,,,,,,,,,,,,,,,,,,
+000877,,,,,,,,,,,,,,,,,,
+000878,,,,,,,,,,,,,,,,,,
+000879,,,,,,,,,,,,,,,,,,
+000880,,,,,,,,,,,,,,,,,,
+000881,,,,,,,,,,,,,,,,,,
+000882,,,,,,,,,,,,,,,,,,
+000883,,,,,,,,,,,,,,,,,,
+000884,,,,,,,,,,,,,,,,,,
+000885,,,,,,,,,,,,,,,,,,
+000886,,,,,,,,,,,,,,,,,,
+000887,,,,,,,,,,,,,,,,,,
+000888,,,,,,,,,,,,,,,,,,
+000889,,,,,,,,,,,,,,,,,,
+000890,,,,,,,,,,,,,,,,,,
+000891,,,,,,,,,,,,,,,,,,
+000892,,,,,,,,,,,,,,,,,,
+000893,,,,,,,,,,,,,,,,,,
+000894,,,,,,,,,,,,,,,,,,
+000895,,,,,,,,,,,,,,,,,,
+000896,,,,,,,,,,,,,,,,,,
+000897,,,,,,,,,,,,,,,,,,
+000898,,,,,,,,,,,,,,,,,,
+000899,,,,,,,,,,,,,,,,,,
+000900,,,,,,,,,,,,,,,,,,
+000901,,,,,,,,,,,,,,,,,,
+000902,,,,,,,,,,,,,,,,,,
+000903,,,,,,,,,,,,,,,,,,
+000904,,,,,,,,,,,,,,,,,,
+000905,,,,,,,,,,,,,,,,,,
+000906,,,,,,,,,,,,,,,,,,
+000907,,,,,,,,,,,,,,,,,,
+000908,,,,,,,,,,,,,,,,,,
+000909,,,,,,,,,,,,,,,,,,
+000910,,,,,,,,,,,,,,,,,,
+000911,,,,,,,,,,,,,,,,,,
+000912,,,,,,,,,,,,,,,,,,
+000913,,,,,,,,,,,,,,,,,,
+000914,,,,,,,,,,,,,,,,,,
+000915,,,,,,,,,,,,,,,,,,
+000916,,,,,,,,,,,,,,,,,,
+000917,,,,,,,,,,,,,,,,,,
+000918,,,,,,,,,,,,,,,,,,
+000919,,,,,,,,,,,,,,,,,,
+000920,,,,,,,,,,,,,,,,,,
+000921,,,,,,,,,,,,,,,,,,
+000922,,,,,,,,,,,,,,,,,,
+000923,,,,,,,,,,,,,,,,,,
+000924,,,,,,,,,,,,,,,,,,
+000925,,,,,,,,,,,,,,,,,,
+000926,,,,,,,,,,,,,,,,,,
+000927,,,,,,,,,,,,,,,,,,
+000928,,,,,,,,,,,,,,,,,,
+000929,,,,,,,,,,,,,,,,,,
+000930,,,,,,,,,,,,,,,,,,
+000931,,,,,,,,,,,,,,,,,,
+000932,,,,,,,,,,,,,,,,,,
+000933,,,,,,,,,,,,,,,,,,
+000934,,,,,,,,,,,,,,,,,,
+000935,,,,,,,,,,,,,,,,,,
+000936,,,,,,,,,,,,,,,,,,
+000937,,,,,,,,,,,,,,,,,,
+000938,,,,,,,,,,,,,,,,,,
+000939,,,,,,,,,,,,,,,,,,
+000940,,,,,,,,,,,,,,,,,,
+000941,,,,,,,,,,,,,,,,,,
+000942,,,,,,,,,,,,,,,,,,
+000943,,,,,,,,,,,,,,,,,,
+000944,,,,,,,,,,,,,,,,,,
+000945,,,,,,,,,,,,,,,,,,
+000946,,,,,,,,,,,,,,,,,,
+000947,,,,,,,,,,,,,,,,,,
+000948,,,,,,,,,,,,,,,,,,
+000949,,,,,,,,,,,,,,,,,,
+000950,,,,,,,,,,,,,,,,,,
+000951,,,,,,,,,,,,,,,,,,
+000952,,,,,,,,,,,,,,,,,,
+000953,,,,,,,,,,,,,,,,,,
+000954,,,,,,,,,,,,,,,,,,
+000955,,,,,,,,,,,,,,,,,,
+000956,,,,,,,,,,,,,,,,,,
+000957,,,,,,,,,,,,,,,,,,
+000958,,,,,,,,,,,,,,,,,,
+000959,,,,,,,,,,,,,,,,,,
+000960,,,,,,,,,,,,,,,,,,
+000961,,,,,,,,,,,,,,,,,,
+000962,,,,,,,,,,,,,,,,,,
+000963,,,,,,,,,,,,,,,,,,
+000964,,,,,,,,,,,,,,,,,,
+000965,,,,,,,,,,,,,,,,,,
+000966,,,,,,,,,,,,,,,,,,
+000967,,,,,,,,,,,,,,,,,,
+000968,,,,,,,,,,,,,,,,,,
+000969,,,,,,,,,,,,,,,,,,
+000970,,,,,,,,,,,,,,,,,,
+000971,,,,,,,,,,,,,,,,,,
+000972,,,,,,,,,,,,,,,,,,
+000973,,,,,,,,,,,,,,,,,,
+000974,,,,,,,,,,,,,,,,,,
+000975,,,,,,,,,,,,,,,,,,
+000976,,,,,,,,,,,,,,,,,,
+000977,,,,,,,,,,,,,,,,,,
+000978,,,,,,,,,,,,,,,,,,
+000979,,,,,,,,,,,,,,,,,,
+000980,,,,,,,,,,,,,,,,,,
+000981,,,,,,,,,,,,,,,,,,
+000982,,,,,,,,,,,,,,,,,,
+000983,,,,,,,,,,,,,,,,,,
+000984,,,,,,,,,,,,,,,,,,
+000985,,,,,,,,,,,,,,,,,,
+000986,,,,,,,,,,,,,,,,,,
+000987,,,,,,,,,,,,,,,,,,
+000988,,,,,,,,,,,,,,,,,,
+000989,,,,,,,,,,,,,,,,,,
+000990,,,,,,,,,,,,,,,,,,
+000991,,,,,,,,,,,,,,,,,,
+000992,,,,,,,,,,,,,,,,,,
+000993,,,,,,,,,,,,,,,,,,
+000994,,,,,,,,,,,,,,,,,,
+000995,,,,,,,,,,,,,,,,,,
+000996,,,,,,,,,,,,,,,,,,
+000997,,,,,,,,,,,,,,,,,,
+000998,,,,,,,,,,,,,,,,,,
+000999,,,,,,,,,,,,,,,,,,
+001000,,,,,,,,,,,,,,,,,,
+000085,05/05/25,Unattached/orphan disks cleanup,Unattached/orphan disks cleanup,DNA Team,,Prem Kumar Alla,Hemul Joshi,180,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000086,05/05/25,Server rebuild,To rebuild OS crashed server,DNA Team,,Prem Kumar Alla,Hemul Joshi,120,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000087,05/05/25,Running chkdsk,Running chkdsk,DNA Team,,Prem Kumar Alla,Hemul Joshi,120,Time spend by DNA & Ops team & EOC's,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000088,05/05/25,Resource cleanup,Resource cleanup,DNA Team,,Prem Kumar Alla,Hemul Joshi,125,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000086,,,App service plan ,,,,,,,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000089,05/05/25,Snapshots notification report,Snapshots notification report autoamted,DNA Team,,Prem Kumar Alla,Hemul Joshi,65,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000090,05/05/25,Snapshot cleanup,Autaomtion for Poc & Unused snapshots cleanup,DNA Team,,Prem Kumar Alla,Hemul Joshi,125,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000091,20/06/25,Unattached Disks notifications,Proposed unused disks notification to app teams to clean up when they are not needed anymore,DNA Team,,Prem Kumar Alla,Hemul Joshi,50,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000092,20/06/25,Listing of available IP's,Listing of available IP's of Subnets & Application specific,DNA Team,,Prem Kumar Alla,Hemul Joshi,60,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000093,20/06/25,App service plan deployment,Automated APP service plan deployment,DNA Team,,Prem Kumar Alla,Hemul Joshi,20,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000094,15/07/25,New Server Build/RG/SA,"240 hrs for VM build, RG’s 75 hrs and SA’s 120 hrs save of time for all 3 scopes",DNA Team,,Prem Kumar Alla,Hemul Joshi,435,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
+000095,15/07/25,Server reboot & Azure VM's Planned Maintenance automation,To avoid unwanted logins to servers and reboot them remotely,DNA Team,,Prem Kumar Alla,Hemul Joshi,40,Time spend by DNA & Ops team,,,,,,Platform Engineering,PE DNA Engineering Enablement,,
